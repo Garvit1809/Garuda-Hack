@@ -61,6 +61,7 @@ const Events = () => {
         <h4>Event Name</h4>
         <h5>125</h5>
         </div>
+        <h4>Hosted By</h4>
         <h4>Date</h4>
         <h4>Location</h4>
         <h4>Mode</h4>
@@ -75,6 +76,7 @@ const Events = () => {
         <h4>Event Name</h4>
         <h5>125</h5>
         </div>
+        <h4>Hosted By</h4>
         <h4>Date</h4>
         <h4>Location</h4>
         <h4>Mode</h4>
@@ -85,6 +87,7 @@ const Events = () => {
         <h4>Event Name</h4>
         <h5>125</h5>
         </div>
+        <h4>Hosted By</h4>
         <h4>Date</h4>
         <h4>Location</h4>
         <h4>Mode</h4>
