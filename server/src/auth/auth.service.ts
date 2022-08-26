@@ -2,6 +2,7 @@ import { ForbiddenException, Injectable } from '@nestjs/common';
 import { PrismaClientKnownRequestError } from '@prisma/client/runtime';
 import { PrismaService } from 'src/prisma/prisma.service';
 import { CreateAuthDto } from './dto/create-auth.dto';
+import { SigninAuthDto } from './dto/signin-auth.dto';
 
 
 @Injectable()
@@ -29,7 +30,7 @@ export class AuthService {
 
   }
 
-  async getUser(dto: CreateAuthDto) {
+  async getUser(dto: SigninAuthDto) {
      // find the user by email
      const user = await this.prisma.user.findUnique({
       where:{
