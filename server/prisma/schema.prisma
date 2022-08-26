@@ -59,7 +59,8 @@ model Event {
 model Mentor {
   id         String   @id @default(auto()) @map("_id") @db.ObjectId
   createdAt  DateTime @default(now())
-  mentorId   String   @db.ObjectId
+  name       String
+  email      String   @unique
   linkedIn   String
   github     String
   education  String
@@ -79,5 +80,4 @@ model OTP {
 enum UserType {
   USER
   ADMIN
-  MENTOR
 }

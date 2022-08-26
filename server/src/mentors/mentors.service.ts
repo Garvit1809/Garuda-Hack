@@ -1,26 +1,95 @@
-import { Injectable } from '@nestjs/common';
+import { ForbiddenException, Injectable } from '@nestjs/common';
+import { PrismaClientKnownRequestError } from '@prisma/client/runtime';
+import { PrismaService } from 'src/prisma/prisma.service';
 import { CreateMentorDto } from './dto/create-mentor.dto';
 import { UpdateMentorDto } from './dto/update-mentor.dto';
 
 @Injectable()
 export class MentorsService {
-  create(createMentorDto: CreateMentorDto) {
-    return 'This action adds a new mentor';
+  constructor(private prisma: PrismaService){}
+  
+  async create(createMentorDto: CreateMentorDto) {
+    try {
+      const mentor = await this.prisma.mentor.create({
+        data: {
+          ...createMentorDto
+        },
+      })
+      return mentor
+    } catch (error) {
+      if(error instanceof PrismaClientKnownRequestError){
+        if(error.code === 'P2002'){
+            throw new ForbiddenException('Something went wrong, please try again later')
+        }
+      }
+    }
   }
 
-  findAll() {
-    return `This action returns all mentors`;
+  async findAll() {
+    try {
+      const mentor = await this.prisma.mentor.findMany()
+      return mentor
+    } catch (error) {
+      if(error instanceof PrismaClientKnownRequestError){
+        if(error.code === 'P2002'){
+            throw new ForbiddenException('Something went wrong, please try again later')
+        }
+      }
+    }
   }
 
-  findOne(id: number) {
-    return `This action returns a #${id} mentor`;
+
+  async findOne(id: string) {
+    try {
+      const mentor = await this.prisma.mentor.findFirst({
+        where: {
+          id: id
+        }
+      })
+      return mentor
+    } catch (error) {
+      if(error instanceof PrismaClientKnownRequestError){
+        if(error.code === 'P2002'){
+            throw new ForbiddenException('Something went wrong, please try again later')
+        }
+      }
+    }
   }
 
-  update(id: number, updateMentorDto: UpdateMentorDto) {
-    return `This action updates a #${id} mentor`;
+  async update(id: string, updateMentorDto: UpdateMentorDto) {
+    try {
+      const mentor = await this.prisma.mentor.update({
+        where: {
+          id: id,
+        },
+        data: {
+          ...updateMentorDto
+        }
+      })
+      return mentor
+    } catch (error) {
+      if(error instanceof PrismaClientKnownRequestError){
+        if(error.code === 'P2002'){
+            throw new ForbiddenException('Something went wrong, please try again later')
+        }
+      }
+    }
   }
 
-  remove(id: number) {
-    return `This action removes a #${id} mentor`;
+  async remove(id: string) {
+    try {
+      const mentor = await this.prisma.mentor.delete({
+        where: {
+          id: id,
+        }
+      })
+      return mentor
+    } catch (error) {
+      if(error instanceof PrismaClientKnownRequestError){
+        if(error.code === 'P2002'){
+            throw new ForbiddenException('Something went wrong, please try again later')
+        }
+      }
+    }
   }
 }

@@ -19,16 +19,16 @@ export class MentorsController {
 
   @Get(':id')
   findOne(@Param('id') id: string) {
-    return this.mentorsService.findOne(+id);
+    return this.mentorsService.findOne(id);
   }
 
   @Patch(':id')
   update(@Param('id') id: string, @Body() updateMentorDto: UpdateMentorDto) {
-    return this.mentorsService.update(+id, updateMentorDto);
+    return this.mentorsService.update(id, updateMentorDto);
   }
 
   @Delete(':id')
   remove(@Param('id') id: string) {
-    return this.mentorsService.remove(+id);
+    return this.mentorsService.remove(id);
   }
 }
