@@ -56,9 +56,22 @@ model Event {
   discordLink Boolean
 }
 
+model Mentor {
+  id         String   @id @default(auto()) @map("_id") @db.ObjectId
+  createdAt  DateTime @default(now())
+  mentorId   String   @db.ObjectId
+  linkedIn   String
+  github     String
+  education  String
+  experience String
+  work       String
+  fees       Int
+  mentees    Int
+}
+
 model OTP {
   id      String @id @default(auto()) @map("_id") @db.ObjectId
-  email   String
+  otp     String
   expired String
 }
 
