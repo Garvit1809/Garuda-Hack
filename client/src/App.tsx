@@ -7,6 +7,8 @@ import Careers from './Pages/Careers';
 import Resources from './Pages/Resources';
 import Events from './Pages/Events';
 import Guidance from './Pages/Guidance';
+import Career from './Components/CareerComponents/Career';
+import Resource from './Components/ResourcesComponent/Resource';
  
 function App() {
   return (
@@ -16,6 +18,8 @@ function App() {
       <Route path='/resources' element={<Resources/>} />
       <Route path='/events' element={<Events/>} />
       <Route path='/mentors' element={<Guidance/>} />
+      <Route path='/careers/id' element={<Career/>} />
+      <Route path='/resources/id' element={<Resource/>} />
     </Routes>
   );
 }
