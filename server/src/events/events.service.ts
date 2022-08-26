@@ -1,26 +1,96 @@
-import { Injectable } from '@nestjs/common';
+import { ForbiddenException, Injectable } from '@nestjs/common';
+import { PrismaClientKnownRequestError } from '@prisma/client/runtime';
+import { PrismaService } from 'src/prisma/prisma.service';
 import { CreateEventDto } from './dto/create-event.dto';
 import { UpdateEventDto } from './dto/update-event.dto';
 
 @Injectable()
 export class EventsService {
-  create(createEventDto: CreateEventDto) {
-    return 'This action adds a new event';
+  constructor(private prisma: PrismaService){}
+
+  async create(createEventDto: CreateEventDto) {
+    try {
+      const event = await this.prisma.event.create({
+        data: {
+          ...createEventDto
+        },
+      })
+      return event
+    } catch (error) {
+      if(error instanceof PrismaClientKnownRequestError){
+        if(error.code === 'P2002'){
+            throw new ForbiddenException('Something went wrong, please try again later')
+        }
+      }
+    }
+
+    
   }
 
-  findAll() {
-    return `This action returns all events`;
+ async findAll() {
+    try {
+      const event = await this.prisma.event.findMany()
+      return event
+    } catch (error) {
+      if(error instanceof PrismaClientKnownRequestError){
+        if(error.code === 'P2002'){
+            throw new ForbiddenException('Something went wrong, please try again later')
+        }
+      }
+    }
   }
 
-  findOne(id: number) {
-    return `This action returns a #${id} event`;
+  async findOne(id: string) {
+    try {
+      const event = await this.prisma.event.findFirst({
+        where: {
+          id: id
+        }
+      })
+      return event
+    } catch (error) {
+      if(error instanceof PrismaClientKnownRequestError){
+        if(error.code === 'P2002'){
+            throw new ForbiddenException('Something went wrong, please try again later')
+        }
+      }
+    }
   }
 
-  update(id: number, updateEventDto: UpdateEventDto) {
-    return `This action updates a #${id} event`;
+  async update(id: string, updateEventDto: UpdateEventDto) {
+    try {
+      const event = await this.prisma.event.update({
+        where: {
+          id: id,
+        },
+        data: {
+          ...updateEventDto
+        }
+      })
+      return event
+    } catch (error) {
+      if(error instanceof PrismaClientKnownRequestError){
+        if(error.code === 'P2002'){
+            throw new ForbiddenException('Something went wrong, please try again later')
+        }
+      }
+    }
   }
 
-  remove(id: number) {
-    return `This action removes a #${id} event`;
+  async remove(id: string) {
+    try {
+      const event = await this.prisma.event.delete({
+        where: {
+          id: id,
+        }
+      })
+      return event
+    } catch (error) {
+      if(error instanceof PrismaClientKnownRequestError){
+        if(error.code === 'P2002'){
+            throw new ForbiddenException('Something went wrong, please try again later')
+        }
+      }
+    }
   }
 }

@@ -41,19 +41,19 @@ model Event {
   id          String   @id @default(auto()) @map("_id") @db.ObjectId
   createdAt   DateTime @default(now())
   name        String
-  eventId     String   @db.ObjectId
-  host        User     @relation(fields: [eventId], references: [id])
   description String
   location    String
   online      Boolean
-  attendees   Int
+  attendees   Int?
   dateStart   DateTime
   dateEnd     DateTime
   content     String
   eventType   String
   eventFor    String
   active      Boolean
-  discordLink Boolean
+  discordLink String
+  userId      String   @db.ObjectId
+  user        User?    @relation(fields: [userId], references: [id])
 }
 
 model Mentor {
