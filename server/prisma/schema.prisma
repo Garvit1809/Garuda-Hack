@@ -11,14 +11,14 @@ datasource db {
 }
 
 model User {
-  id          String   @id @default(auto()) @map("_id") @db.ObjectId
-  createdAt   DateTime @default(now())
-  name        String
-  email       String   @unique
-  phoneNumber String
-  userType    UserType @default(USER)
-  career      Career[]
-  event       Event[]
+  id        String   @id @default(auto()) @map("_id") @db.ObjectId
+  createdAt DateTime @default(now())
+  name      String
+  email     String   @unique
+  password  String
+  userType  UserType @default(USER)
+  career    Career[]
+  event     Event[]
 }
 
 model Career {
@@ -70,9 +70,10 @@ model Mentor {
 }
 
 model OTP {
-  id      String @id @default(auto()) @map("_id") @db.ObjectId
+  id      String   @id @default(auto()) @map("_id") @db.ObjectId
   otp     String
-  expired String
+  email   String
+  expired DateTime
 }
 
 enum UserType {
