@@ -1,4 +1,37 @@
-import { PartialType } from '@nestjs/mapped-types';
-import { CreateCareerDto } from './create-career.dto';
+import { IsArray, IsNotEmpty, IsString } from 'class-validator';
 
-export class UpdateCareerDto extends PartialType(CreateCareerDto) {}
+
+export class UpdateCareerDto {
+
+    @IsString()
+    @IsNotEmpty()
+    companyName      :string
+
+    @IsString()
+    companyImageLink :string
+
+    @IsString()
+    companyWebsite   :string
+
+    @IsString()
+    companyVision    :string
+
+    @IsString()
+    @IsNotEmpty()
+    role             :string
+
+    @IsString()
+    roleDescription  :string
+
+    @IsArray()
+    skills           :string[]
+
+    @IsString()
+    jobType          :string
+
+    @IsString()
+    jobLocation      :string
+
+}
+
+
