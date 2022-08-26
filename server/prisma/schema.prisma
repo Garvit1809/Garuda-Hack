@@ -6,6 +6,64 @@ generator client {
 }
 
 datasource db {
-  provider = "postgresql"
+  provider = "mongodb"
   url      = env("DATABASE_URL")
+}
+
+model User {
+  id          String   @id @default(auto()) @map("_id") @db.ObjectId
+  createdAt   DateTime @default(now())
+  name        String
+  email       String   @unique
+  phoneNumber String
+  userType    UserType @default(USER)
+  career      Career[]
+  event       Event[]
+}
+
+model Career {
+  id               String   @id @default(auto()) @map("_id") @db.ObjectId
+  createdAt        DateTime @default(now())
+  companyName      String
+  companyImageLink String
+  companyWebsite   String
+  companyVision    String
+  role             String
+  roleDescription  String
+  skills           String[]
+  jobType          String
+  jobLocation      String
+  author           User?    @relation(fields: [careerId], references: [id])
+  careerId         String   @db.ObjectId
+}
+
+model Event {
+  id          String   @id @default(auto()) @map("_id") @db.ObjectId
+  createdAt   DateTime @default(now())
+  name        String
+  eventId     String   @db.ObjectId
+  host        User     @relation(fields: [eventId], references: [id])
+  description String
+  location    String
+  online      Boolean
+  attendees   Int
+  dateStart   DateTime
+  dateEnd     DateTime
+  content     String
+  eventType   String
+  eventFor    String
+  active      Boolean
+  discordLink Boolean
+}
+
+model OTP {
+  id      String @id @default(auto()) @map("_id") @db.ObjectId
+  email   String
+  expired String
+}
+
+enum UserType {
+  USER
+  ADMIN
+  MENTOR
 }
