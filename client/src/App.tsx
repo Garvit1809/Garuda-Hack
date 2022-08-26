@@ -9,6 +9,7 @@ import Events from './Pages/Events';
 import Guidance from './Pages/Guidance';
 import Career from './Components/CareerComponents/Career';
 import Resource from './Components/ResourcesComponent/Resource';
+import Event from './Components/EventsComponents/Event';
  
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
       <Route path='/mentors' element={<Guidance/>} />
       <Route path='/careers/id' element={<Career/>} />
       <Route path='/resources/id' element={<Resource/>} />
+      <Route path='/events/id' element={<Event/>} />
     </Routes>
   );
 }
