@@ -6,7 +6,7 @@ import Navbar from '../Components/GeneralComponents/Navbar'
 const Section = styled.div`
 width: 100%;
 min-height: calc(100vh - 4rem);
-border: 1px solid red;
+/* border: 1px solid red; */
 
 display: flex;
 flex-direction: column;
@@ -23,7 +23,7 @@ width: 80%;
 const Oppo = styled.div`
 /* display: flex; */
 /* flex-wrap: wrap; */
-border: 1px solid black;
+/* border: 1px solid black; */
 display: grid;
 grid-template-columns: auto auto auto auto;
 
@@ -57,8 +57,6 @@ const Careers = () => {
     <Section>
     <h1>Looking to start a new career? Get started here!</h1>
     <Opportunity>
-    <h4>POLICE</h4>
-    <hr />
     <Oppo>
     <div onClick={careerClick} >Lorem ipsum dolor sit amet.</div>
     <div onClick={careerClick} >Lorem ipsum dolor sit amet.</div>
