@@ -98,21 +98,24 @@ const Careers = () => {
           <h1>Support the community by posting any opportunity here!!</h1>
           <form action="">
           <h3>Company Name</h3>
-          <input type="text" name="" id="" />
+          <input type="text" name="" id="" placeholder='Enter Companys Name' />
           <h3>Company Image URL</h3>
-          <input type="text" name="" id="" />
+          <input type="text" name="" id="" placeholder='Enter a company image (URL preferred)'/>
           <h3>Company's Website</h3>
-          <input type="text" name="" id="" />
+          <input type="text" name="" id="" placeholder='Enter Companys Website' />
           <h3>Role</h3>
-          <input type="text" name="" id="" />
+          <input type="text" name="" id="" placeholder='For what Role you are looking for ?' />
           <h3>Work</h3>
+          <input type="text" name="" id="" placeholder='Remote Work || InOffice Work' />
           <h3>Location</h3>
-          <input type="text" name="" id="" />
+          <input type="text" name="" id="" placeholder='Enter Work Location if InOffice' />
           <h3>Role Description</h3>
-          <textarea name="" id="" />
+          <textarea name="" id="" placeholder='Specify the Role Description' />
           <h3>Skills Required</h3>
-          <input type="text" name="" id="" />
+          <input type="text" name="" id="" placeholder='Skills required for the role' />
           <h3>Tell us more about your organization</h3>
+          <textarea name="" id="" placeholder="Your Company's Vision" />
+          <button>Submit</button>
         </form>
         </Box>
       </Modal>

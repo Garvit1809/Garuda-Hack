@@ -9,8 +9,9 @@ export default makeStyles(() => ({
             margin: '0',
             // border: '1px solid red',
             color: '#2B2A35',
-            marginBottom: '0.6rem',
+            marginBottom: '1rem',
             fontSize: '1.2rem',
+            fontWeight: '600'
         },
         
         '& p': {
@@ -29,26 +30,33 @@ export default makeStyles(() => ({
             justifyContent: 'center',
         },
 
+        '& h3':{
+            margin: '0',
+            color: '#2B2A35',
+            fontSize: '1rem',
+            marginBottom: '0.5rem',
+            fontWeight: '500'
+        },
+
         '& input': {
-            border: 'none',
+            // border: 'none',
             width: '80%',
-            borderBottom: '1px solid #C4C4C4',
+            border: '1px solid #C4C4C4',
             borderRadius: '3px',
-            marginBottom: '1rem',
-            padding: '0 0.2rem',
+            marginBottom: '0.8rem',
+            padding: '0.5rem 0.5rem',
             fontSize: '1rem',
             
             '&:focus': {
-                borderBottom: '1px solid #C4C4C4',
                 outline: 'none',
-                border: 'none'
+                // border: 'none'
             },
 
            
         },
 
         '& textarea': {
-            width: '95%',
+            width: '80%',
             height: '5rem',
             resize: 'none',
             borderRadius: '3px',
