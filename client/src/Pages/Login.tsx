@@ -1,8 +1,10 @@
-import React from 'react'
-import { Link } from 'react-router-dom'
+import React, { useState } from 'react'
+import { Link, useNavigate } from 'react-router-dom'
 import styled from 'styled-components'
 import Button from '../Components/GeneralComponents/Button'
 import Navbar from '../Components/GeneralComponents/Navbar'
+import SubmitButton from '../Components/GeneralComponents/SubmitButton'
+import { postData } from '../lib'
 
 const Card = styled.div`
   display: flex;
@@ -44,11 +46,57 @@ const InputBox = styled.input`
   margin: 5px 0 5px 0;
 `
 
+const ErrorMessages = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  flex-direction: column;
+ text-align: center;
+  align-items: center;
+  color: red;
+  font-size: 1rem;
+
+  ${({ hidden }) => hidden && `
+      display: none
+  `}
+`
 
 
 
 
 const Login = () => {
+
+  let navigate = useNavigate();
+  const [email, setEmail] = useState("")
+  const [password, setPassword] = useState("")
+  const [notError, setNotError] = useState(true)
+  const [errorMsg, setErrorMsg] = useState("test")
+
+  const handleEmail = (e: React.ChangeEvent<HTMLInputElement>): void =>{
+    setEmail(e.target.value)
+  }
+
+  const handlePassword = (e: React.ChangeEvent<HTMLInputElement>): void =>{
+    setPassword(e.target.value)
+  }
+
+  const loginHandler = ()=>{
+      postData('http://localhost:4000/auth/signin', {
+        email,
+        password
+      }).then((data) => {
+        if(!data.statusCode){
+          localStorage.setItem('user', JSON.stringify(data));
+          navigate("/")
+        } else {
+          setErrorMsg(data.message.toString())
+          setNotError(false)
+        }
+      })
+      .catch(err=>console.log(err))
+    }
+
   return (
     <>
     <Navbar/>
@@ -59,10 +107,13 @@ const Login = () => {
       <div>Login to Continue</div>
       </Container>
       <Container>
-      <InputBox type="email" className="email" name="email" placeholder='Email' />
-      <InputBox type="password" className="email" name="email" placeholder='Password'  />
+      <InputBox type="email" className="email" name="email" placeholder='Email' value={email} onChange={handleEmail} />
+      <InputBox type="password" className="password" name="email" placeholder='Password' value={password} onChange={handlePassword}  />
       </Container>
-      <Button text="Login" link="#" clr="#fff" backgroundColor="#202020" />
+      <ErrorMessages hidden={notError} className='err'>{errorMsg}</ErrorMessages>
+      <Container>
+      <SubmitButton text="Login" clr="#fff" backgroundColor="#202020" onClick={()=> loginHandler()} />
+      </Container>
       <Container>
       <div className="label">Dont have an account?</div>
       <Link to="/">Register Here</Link>

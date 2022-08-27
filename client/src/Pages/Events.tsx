@@ -1,9 +1,10 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import styled from 'styled-components'
 import Navbar from '../Components/GeneralComponents/Navbar'
 import eventImg1 from '../Assets/eventImg.webp'
 import { useNavigate } from 'react-router-dom'
 import PostEvent from '../Components/EventsComponents/PostEvent'
+import { getData } from '../lib'
 
 const Section = styled.div`
 width: 75%;
@@ -46,11 +47,19 @@ width: 90%;
 `
 
 const Events = () => {
-
+  const [events, setEvents] = useState([])
   const navigate = useNavigate();
   const eventClick = () => {
     navigate("/events/id")
   }
+
+  useEffect(()=>{
+    const data: any = getData("http://localhost:4000/events")
+    if(!data.statusCode){
+      setEvents(data)
+      console.log(data)
+    }
+   }, [])
 
   return (
     <>
