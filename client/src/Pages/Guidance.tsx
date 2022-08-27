@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import styled from 'styled-components'
 import Navbar from '../Components/GeneralComponents/Navbar'
 import PostMentor from '../Components/GuidanceComponents/PostMentor'
@@ -7,6 +7,7 @@ import MentorImg2 from '../Assets/MentorImg2.jpg'
 import {MdPeopleAlt} from 'react-icons/md'
 import Button from '../Components/GeneralComponents/Button'
 import {BsLinkedin, BsGithub} from 'react-icons/bs'
+import { getData } from '../lib'
 
 const Section = styled.div`
 width: 100%;
@@ -203,6 +204,16 @@ const BecomeMentee = styled.div`
 `
 
 const Guidance = () => {
+  const [mentors, setMentors] = useState([])
+
+  useEffect(()=>{
+    const data: any = getData("http://localhost:4000/mentors")
+    if(!data.statusCode){
+      setMentors(data)
+      console.log(data)
+    }
+   }, [])
+
   return (
     <>
     <Navbar/>
