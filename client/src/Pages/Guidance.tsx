@@ -6,6 +6,7 @@ import MentorImg1 from '../Assets/MentorImg1.jpg'
 import MentorImg2 from '../Assets/MentorImg2.jpg'
 import {MdPeopleAlt} from 'react-icons/md'
 import Button from '../Components/GeneralComponents/Button'
+import {BsLinkedin, BsGithub} from 'react-icons/bs'
 
 const Section = styled.div`
 width: 100%;
@@ -176,6 +177,21 @@ h3{
     font-size: 1.1rem;
     
   } 
+
+  div{
+    /* border: 1px solid red; */
+    width: 80%;
+    margin-left: 1.3rem;
+    margin-top: 0.4rem;
+
+    svg{
+      width: 30px;
+      height: 30px;
+      margin-right: 1rem;
+      fill: grey;
+      cursor: pointer;
+    }
+  }
 `
 
 const BecomeMentee = styled.div`
@@ -218,7 +234,8 @@ const Guidance = () => {
           <Socials>
           <h3>Socials</h3>
           <div>
-
+            <BsLinkedin/>
+            <BsGithub/>
           </div>
           </Socials>
           <BecomeMentee>
@@ -246,7 +263,8 @@ const Guidance = () => {
           <Socials>
           <h3>Socials</h3>
           <div>
-
+            <BsLinkedin/>
+            <BsGithub/>
           </div>
           </Socials>
           <BecomeMentee>
@@ -274,7 +292,8 @@ const Guidance = () => {
           <Socials>
           <h3>Socials</h3>
           <div>
-
+            <BsLinkedin/>
+            <BsGithub/>
           </div>
           </Socials>
           <BecomeMentee>
@@ -304,7 +323,8 @@ const Guidance = () => {
           <Socials>
           <h3>Socials</h3>
           <div>
-
+            <BsLinkedin/>
+            <BsGithub/>
           </div>
           </Socials>
           <BecomeMentee>
@@ -332,14 +352,14 @@ const Guidance = () => {
           <Socials>
           <h3>Socials</h3>
           <div>
-
+            <BsLinkedin/>
+            <BsGithub/>
           </div>
           </Socials>
           <BecomeMentee>
             <Button text="Become a Mentee" link="#" clr="#fff" backgroundColor="#202020" />
           </BecomeMentee>
         </Guide>
-
       </Guides>
     </Section>
     </>

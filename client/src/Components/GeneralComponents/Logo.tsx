@@ -18,7 +18,7 @@ const Logo = () => {
   return (
     <LogoText>
     <Link to="/">
-    ProudIndo
+    MauKerja..
     </Link>
     </LogoText>
   )
