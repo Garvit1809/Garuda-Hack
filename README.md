@@ -1,6 +1,5 @@
 <h1 align="center"> MauKerja </h1>
 
-
 <h3 align="center"> Short Brief </h3>
 
 <p align="center">
@@ -18,36 +17,57 @@ You can checkout the demo video on youtube by clicking on the thumbnail below.
 <img src="https://user-images.githubusercontent.com/89806031/178891853-da0d4d10-f454-42f8-bae5-7028d52f15a4.png" >  
 </a>
 
-The site is deployed through heroku, which you can view from [here](https://stresser-on.herokuapp.com/)  
+The site is deployed through heroku, which you can view from [here](https://stresser-on.herokuapp.com/)
 
 ---
 
-## Inspiration 
+## Inspiration
+
+# kjdjcbdhjcb
+
+## Inspiration
+
 kjdjcbdhjcb
 
-
 ## What it does
-The aim of MauKerja is to provide top quality education and guidance along with the job opportunities. It is a web application where students can get **Job/Internship opportunities** and can learn and prepare through **free Resources**. We also provide mentorship facilities where experienced folk can become	**Mentors** and guide others in achieving their goals. You can also host **Events** like Hackathons, workshops , seminars.
 
+# The aim of MauKerja is to provide top quality education and guidance along with the job opportunities. It is a web application where students can get **Job/Internship opportunities** and can learn and prepare through **free Resources**. We also provide mentorship facilities where experienced folk can become **Mentors** and guide others in achieving their goals. You can also host **Events** like Hackathons, workshops , seminars.
 
 ## How we built it 🛠⚒⚙
 
-
+# We used React with some styled component for front-end UI and our most beloved node.js to run it. For back-end we are using the most stable node-express framework with nest.js, mongodb as a database and prisma as our ORM.
 
 ## Challenges we ran into
-sj kbffkkf jf 
 
+sj kbffkkf jf
+
+<<<<<<< Updated upstream
 
 ## Accomplishments that we're proud of 🥇🥇
-kjbvhrb
 
+# kjbvhrb
+
+## Accomplishments that we're proud of
+
+> > > > > > > Stashed changes
+
+dkjcjksb nf
+
+<<<<<<< Updated upstream
 
 ## What we learned 👩‍💻👩‍💻
-It was a great learning experience for both of us, it was the first time one of us was introduced to Nest.js and typeScript. We built our frontend with typeScript only, so got a lot of errors but I quickly got the hang of it. We also learnt to use Gihub efficiently and its our first time making a detailed Readme file for our users.
 
+=======
 
-## What's next for MauKerja 
+## What we learned
+
+> > > > > > > Stashed changes
+> > > > > > > It was a great learning experience for both of us, it was the first time one of us was introduced to Nest.js and typeScript. We built our frontend with typeScript only, so got a lot of errors but I quickly got the hang of it. We also learnt to use Gihub efficiently and its our first time making a detailed Readme file for our users.
+
+## What's next for MauKerja
+
 We are planning to add a lot of features to the application to make it useful for students as well as mentors :-
+
 - **Improving the UI** :- As the application is built within a span of 2 days, we would focus in improving its UI and making it more user-friendly
 - **Adding more free resources** :- We are adding a lot more resources like Development Roadmaps, Interview Preparation Resources, Data Structures and Algorithms CheatSheets, Open Source Contributions etc. One of our aim is to provide free high quality education to fellows, so that they can get learning resources as well as career opportunities on the same platform.
 - **Improving Events Facilities** :- Events are essential for students as it improves their technical, behavioural and communication skills. Through MauKerja, one can attend any event and can also host an event. The event may be a hackathon, workshop or a seminar. We would like to add video conference like features and chat boxes through whichfolks attending an event can interact on the application only
@@ -62,7 +82,6 @@ We are planning to add a lot of features to the application to make it useful fo
 
 ![homeImg](https://user-images.githubusercontent.com/89806031/178814155-9a31f975-aee1-4630-9d05-29b30b14b46b.png)
 ![homeImg2](https://user-images.githubusercontent.com/89806031/179440842-f424fc5d-8f25-4a0e-9b7a-6fdd8f92c091.png)
-
 
 ### 2. Therapy Page
 
@@ -84,16 +103,13 @@ There is a small box having a list of ingredients 🍈🥑 which help in reducin
 You can look recipes for any ingredient from the Ingredient-Box. By <b><i>Clicking</i></b> on the recipe image you can get more information about that recipe 😋
 ![dietImg3](https://user-images.githubusercontent.com/89806031/178822706-714f2fc4-e592-4fa1-a57c-ac41494c0784.png)
 
-
 ### 4. Diary Page
 
 If you struggle with stress, depression, or anxiety, keeping a journal can be a great Idea. Keep a track of your daily mood with our diary section.
 ![diaryImg1](https://user-images.githubusercontent.com/89806031/183259613-e0f0840f-7028-448a-8037-d1b573bc4cbf.png)
 
-You can also view your diary entries 📖 
+You can also view your diary entries 📖
 ![diaryImg2](https://user-images.githubusercontent.com/89806031/183259724-351be00c-0555-4406-9bf5-639f0ff49a59.png)
-
-
 
 ### 5. Chat Page
 
@@ -101,7 +117,6 @@ Lack of social interactions also damages mental health. But don't worry, we have
 ![chatImg1](https://user-images.githubusercontent.com/89806031/178890614-93a7cbaf-0929-4ef8-ae64-3a95d9cb52fa.png)
 
 ![chatImg2](https://user-images.githubusercontent.com/89806031/178890696-97bdbca8-1266-4837-a588-f9c003098139.png)
-
 
 ### 6. Authentication Pages
 
@@ -111,16 +126,14 @@ SignUp Page
 Login Page
 ![autImg2](https://user-images.githubusercontent.com/89806031/178909075-7a5029d8-4907-440e-91a9-61f8c78ffad9.png)
 
-
 ### 7. SetAvatar Page
 
 After signing up, you would come across this page where you have to pick an Avatar as your progfile image.
 ![avatarImg](https://user-images.githubusercontent.com/89806031/178909724-6fa3babe-d03f-4ffd-ba6e-0eee0efdfb99.png)
 
-
 ---
 
-##  👦 Contributors
+## 👦 Contributors
 
 - Garvit Varshney
   [![portfolio](https://img.shields.io/badge/my_portfolio-000?style=for-the-badge&logo=ko-fi&logoColor=white)](https://garvits-portfolio-on.netlify.app/)
