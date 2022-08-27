@@ -29,12 +29,12 @@ dkjcjksb  nf
 
 
 ## What we learned
-dlkncjkfcf
+It was a great learning experience for both of us, it was the first time one of us was introduced to Nest.js and typeScript. We built our frontend with typeScript only, so got a lot of errors but I quickly got the hang of it. We also learnt to use Gihub efficiently and its our first time making a detailed Readme file for our users.
 
 
 ## What's next for MauKerja 
 We are planning to add a lot of features to the application to make it useful for students as well as mentors :-
 - **Improving the UI** :- As the application is built within a span of 2 days, we would focus in improving its UI and making it more user-friendly
-- **Adding more free resources** :-
+- **Adding more free resources** :- We are adding a lot more resources like - Development Roadmaps - kjebckb  - jfhvbjkvbjk
 - **Improving Events Facilities** :-
 - **Integrating Payment Methods** :-
