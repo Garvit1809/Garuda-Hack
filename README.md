@@ -4,11 +4,11 @@
 <h3 align="center"> Short Brief </h3>
 
 <p align="center">
-MauKerja is a web application for students to level up their skills without any discrimination. We provide Job/Internship opportunities, learning resources and courses, one cn organize and join events and you can get personal guidance from experienced Mentors.
+MauKerja is a web application for students to level up their skills. We provide Job/Internship opportunities, learning resources and courses, one can organize and join events and you can get personal guidance from experienced Mentors.
  </p>
 
 
-## Inspiration
+## Inspiration 
 kjdjcbdhjcb
 
 
@@ -16,7 +16,7 @@ kjdjcbdhjcb
 The aim of MauKerja is to provide top quality education and guidance along with the job opportunities. It is a web application where students can get **Job/Internship opportunities** and can learn and prepare through **free Resources**. We also provide mentorship facilities where experienced folk can become	**Mentors** and guide others in achieving their goals. You can also host **Events** like Hackathons, workshops , seminars.
 
 
-## How we built it
+## How we built it 🛠⚒⚙
 
 
 
@@ -24,11 +24,11 @@ The aim of MauKerja is to provide top quality education and guidance along with 
 sj kbffkkf jf 
 
 
-## Accomplishments that we're proud of
+## Accomplishments that we're proud of 🥇🥇
 kjbvhrb
 
 
-## What we learned
+## What we learned 👩‍💻👩‍💻
 It was a great learning experience for both of us, it was the first time one of us was introduced to Nest.js and typeScript. We built our frontend with typeScript only, so got a lot of errors but I quickly got the hang of it. We also learnt to use Gihub efficiently and its our first time making a detailed Readme file for our users.
 
 
