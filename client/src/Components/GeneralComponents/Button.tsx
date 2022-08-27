@@ -54,6 +54,7 @@ interface buttonProps {
     link: any
     backgroundColor: String,
     clr: String
+    onClick?: any
 }
 
 const Button = (props: buttonProps) => {

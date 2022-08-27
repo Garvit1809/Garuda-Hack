@@ -8,11 +8,16 @@ import careerImg1 from '../Assets/CareerImg1.jpg'
 import {Carrers} from '../Components/CareerComponents/CareerData'
 import Career from '../Components/CareerComponents/Career'
 
+import Box from '@mui/material/Box';
+import Button from '@mui/material/Button';
+import Typography from '@mui/material/Typography';
+import Modal from '@mui/material/Modal';
+import useStyles from '../Components/CareerComponents/CareersStyles'
 
 const Section = styled.div`
 width: 100%;
 min-height: calc(100vh - 4rem);
-border: 1px solid red;
+/* border: 1px solid red; */
 position: relative;
 
 display: flex;
@@ -23,7 +28,7 @@ align-items: center;
 `
 
 const Heading = styled.div`
-  margin-bottom: 0.4rem;
+  margin-bottom: 1rem;
 h1{
   /* margin: 0; */
   font-size: 2rem;
@@ -34,50 +39,35 @@ h1{
 
 const Opportunity = styled.div`
 width: 80vw;
-/* border: 1px solid black; */
 `
 
 const Oppo = styled.div`
-/* display: flex; */
-/* flex-wrap: wrap; */
-border: 1px solid black;
+/* border: 1px solid black; */
 display: grid;
 grid-template-columns: auto auto auto;
-
-h1,h2,h3,h4,h5,h6{
-  margin: 0;
-}
-
-div{
-  /* border: 1px solid blue; */
-  width: 25vw;
-  margin: 0 auto;
-  margin-bottom: 2rem;
-  height: 30vh;
-  cursor: pointer;
-  transition: all 0.2s ease;
-
-
-  &:hover{
-    /* transform: scale(1.1); */
-    transform: translateY(-5%);
-  }
-
-  img{
-    height: 30vh;
-    width: 25vw;
-    object-fit: cover;
-  }
-}
 `
 
-const Desc = styled.div`
-  
-`
+const style = {
+  position: "absolute" as "absolute",
+  top: "50%",
+  left: "50%",
+  transform: "translate(-50%, -50%)",
+  width: 700,
+  bgcolor: "background.paper",
+  border: "1px solid #C4C4C4",
+  boxShadow: 24,
+  p: 4,
+};
+
 
 const Careers = () => {
   const [careers, setCareers] = useState([])
   const navigate = useNavigate()
+
+  const classes = useStyles();
+  const [open, setOpen] = React.useState(false);
+  const handleOpen = () => setOpen(true);
+  const handleClose = () => setOpen(false);
 
  useEffect(()=>{
   const data: any = getData("http://localhost:4000/careers")
@@ -87,11 +77,45 @@ const Careers = () => {
   }
  }, [])
 
+ const handlePostCareer = () => {
+  alert("Hello")
+}
+
   return (
     <>
     <Navbar/>
     <Section>
-      <PostCareer/>
+      <div onClick={handleOpen} > 
+      <PostCareer />
+      </div>
+      <Modal
+        open={open}
+        onClose={handleClose}
+        aria-labelledby="modal-modal-title"
+        aria-describedby="modal-modal-description"
+      >
+        <Box sx={style} className={classes.modal}>
+          <h1>Support the community by posting any opportunity here!!</h1>
+          <form action="">
+          <h3>Company Name</h3>
+          <input type="text" name="" id="" />
+          <h3>Company Image URL</h3>
+          <input type="text" name="" id="" />
+          <h3>Company's Website</h3>
+          <input type="text" name="" id="" />
+          <h3>Role</h3>
+          <input type="text" name="" id="" />
+          <h3>Work</h3>
+          <h3>Location</h3>
+          <input type="text" name="" id="" />
+          <h3>Role Description</h3>
+          <textarea name="" id="" />
+          <h3>Skills Required</h3>
+          <input type="text" name="" id="" />
+          <h3>Tell us more about your organization</h3>
+        </form>
+        </Box>
+      </Modal>
       <Heading>
         <h1>Looking to start a new career? Get started here!!</h1>
       </Heading>
