@@ -12,6 +12,12 @@ import MentorImg1 from '../Assets/mentor1.jpg'
 import MentorImg2 from '../Assets/mentor2.jpg'
 import MentorImg3 from '../Assets/mentor3.jpg'
 import StarImg from "../Assets/star.png"
+import CalendarImg from "../Assets/calendar.png"
+import ClockImg from "../Assets/clock.png"
+import LocationImg from "../Assets/location.png"
+import GoogleHackImg from "../Assets/google-hack.jpg"
+import ProjectManagementImg from "../Assets/project-management.jpg"
+import LatteArtImg from "../Assets/latte-art.jpg"
 
 const Section = styled.div`
 width: 100%;
@@ -172,6 +178,11 @@ const Guide = styled.div`
   }
 
 `
+const IconContainer = styled.div`
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+`
 const StarContainer = styled.div`
     display: flex;
     flex-wrap: nowrap;
@@ -179,6 +190,7 @@ const StarContainer = styled.div`
     width: 100%;
     img.star {
     padding-left: 1rem;
+    margin: 2px 0 2px 0;
     width: 20px;
     height: 20px;
   }
@@ -254,10 +266,6 @@ const Home = () => {
     <Wrapper>
       <Cover>
         <h1 className='content'>Anyone can get their dream job</h1>
-        <br>
-        </br>
-        <br>
-        </br>
         <SectionButton text="Get Started" link="#mentor" clr="#fff" backgroundColor="#202020" />
       </Cover>
     </Wrapper>
@@ -296,9 +304,7 @@ const Home = () => {
             <ImgContainer>
             <img src={MentorImg2} alt="" />
             </ImgContainer>
-            
             <h2 className='name'>Daniel Green</h2>
-            
           </Header>
           <h3 className='JobDesc'>UX Designer at Airbnb</h3>
           <h3 className='fees' >Fees: <span>$10/lesson</span></h3>
@@ -327,8 +333,86 @@ const Home = () => {
         </Guide>
       </Guides>
     </Section>
+    <div id="ongoing-events" />
+    <Title>Learn From Events</Title>
+    <Section>
+    <Guides>
+        <Guide>
+          <Header>
+            <ImgContainer>
+            <img src={GoogleHackImg} alt="" />
+            </ImgContainer>
+            <h2 className='name'>Google Hackathon</h2>
+          </Header>
+          <div></div>
+          <h3 className='JobDesc'>Google</h3>
+          <IconContainer>
+          <StarContainer>
+          <img className='star' src={CalendarImg} alt="" /><h3 className='starnum'>26 Aug 2022 - 28 Aug 2022</h3>
+          </StarContainer>
+          <StarContainer>
+          <img className='star' src={ClockImg} alt="" /><h3 className='starnum'>All Day</h3>
+          </StarContainer>
+          <StarContainer>
+          <img className='star' src={LocationImg} alt="" /><h3 className='starnum'>New York</h3>
+          </StarContainer>
+          </IconContainer>
+          <BecomeMentee>
+            <Button text="Participate" link="#" clr="#fff" backgroundColor="#202020" />
+          </BecomeMentee>
+        </Guide>
+        <Guide>
+          <Header>
+            <ImgContainer>
+            <img src={ProjectManagementImg} alt="" />
+            </ImgContainer>
+            <h2 className='name'>Project Management 101</h2>
+          </Header>
+          <div></div>
+          <h3 className='JobDesc'>Ricky</h3>
+          <IconContainer>
+          <StarContainer>
+          <img className='star' src={CalendarImg} alt="" /><h3 className='starnum'>30 Aug 2022</h3>
+          </StarContainer>
+          <StarContainer>
+          <img className='star' src={ClockImg} alt="" /><h3 className='starnum'>7pm - 9pm WIB</h3>
+          </StarContainer>
+          <StarContainer>
+          <img className='star' src={LocationImg} alt="" /><h3 className='starnum'>Zoom</h3>
+          </StarContainer>
+          </IconContainer>
+          <BecomeMentee>
+            <Button text="Participate" link="#" clr="#fff" backgroundColor="#202020" />
+          </BecomeMentee>
+        </Guide>
+        <Guide>
+          <Header>
+            <ImgContainer>
+            <img src={LatteArtImg} alt="" />
+            </ImgContainer>
+            <h2 className='name'>Latte Art Masterclass</h2>
+          </Header>
+          <div></div>
+          <h3 className='JobDesc'>Google</h3>
+          <IconContainer>
+          <StarContainer>
+          <img className='star' src={CalendarImg} alt="" /><h3 className='starnum'>10 December 2022</h3>
+          </StarContainer>
+          <StarContainer>
+          <img className='star' src={ClockImg} alt="" /><h3 className='starnum'>9am - 10am WIB</h3>
+          </StarContainer>
+          <StarContainer>
+          <img className='star' src={LocationImg} alt="" /><h3 className='starnum'>Jakarta</h3>
+          </StarContainer>
+          </IconContainer>
+          <BecomeMentee>
+            <Button text="Participate" link="#" clr="#fff" backgroundColor="#202020" />
+          </BecomeMentee>
+        </Guide>
+      </Guides>
+    </Section>
     <div id="resources" />
-    <Title>Lots of Resources</Title>
+    <Title>Get Free Resources</Title>
       <Section>
         <TextContainer>
         <div className='description'>Finding good study materials to prepare yourself for a job is sometimes very challenging. Worry no more, at MauKerja you can find a lot of good resources specially made for people who want to get ready for their job.</div>
@@ -336,6 +420,7 @@ const Home = () => {
         </TextContainer>
         <ResourcesImage />
       </Section>
+     
       <Footer />
       <br>
         </br>
