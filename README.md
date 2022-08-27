@@ -7,6 +7,20 @@
 MauKerja is a web application for students to level up their skills. We provide Job/Internship opportunities, learning resources and courses, one can organize and join events and you can get personal guidance from experienced Mentors.
  </p>
 
+---
+
+# ✊ About
+
+> Stresser stresses on reducing people's stress and anxiety by providing featues like therapy, diet, diary and chat sections.
+
+You can checkout the demo video on youtube by clicking on the thumbnail below.
+<a href="https://www.youtube.com/watch?v=kYiz4qzpaZw">
+<img src="https://user-images.githubusercontent.com/89806031/178891853-da0d4d10-f454-42f8-bae5-7028d52f15a4.png" >  
+</a>
+
+The site is deployed through heroku, which you can view from [here](https://stresser-on.herokuapp.com/)  
+
+---
 
 ## Inspiration 
 kjdjcbdhjcb
