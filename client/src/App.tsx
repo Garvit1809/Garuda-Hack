@@ -13,6 +13,8 @@ import Event from './Components/EventsComponents/Event';
 import Resrc from './Pages/Resrc';
 import Resources from './Pages/Resources';
 import Testing from './Pages/Testing'
+import Login from './Pages/Login';
+import Register from './Pages/Register';
 // import Resrc from './Pages/Resrc';
 // import Resources from './Pages/Resources';
  
@@ -20,6 +22,8 @@ function App() {
   return (
     <Routes>
       <Route path='/' element={<Home/>} />
+      <Route path='/login' element={<Login/>} />
+      <Route path='/register' element={<Register/>} />
       <Route path='/careers' element={<Careers/>} />
       <Route path='/resources' element={<Resources/>} />
       {/* <Route path='/resources' element={<Testing/>} /> */}
