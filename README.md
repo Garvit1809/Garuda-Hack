@@ -31,17 +31,15 @@ kjdjcbdhjcb
 
 ## What it does
 
-# The aim of MauKerja is to provide top quality education and guidance along with the job opportunities. It is a web application where students can get **Job/Internship opportunities** and can learn and prepare through **free Resources**. We also provide mentorship facilities where experienced folk can become **Mentors** and guide others in achieving their goals. You can also host **Events** like Hackathons, workshops , seminars.
+The aim of MauKerja is to provide top quality education and guidance along with the job opportunities. It is a web application where students can get **Job/Internship opportunities** and can learn and prepare through **free Resources**. We also provide mentorship facilities where experienced folk can become **Mentors** and guide others in achieving their goals. You can also host **Events** like Hackathons, workshops , seminars.
 
 ## How we built it 🛠⚒⚙
 
-# We used React with some styled component for front-end UI and our most beloved node.js to run it. For back-end we are using the most stable node-express framework with nest.js, mongodb as a database and prisma as our ORM.
+We used React with some styled component for front-end UI and our most beloved node.js to run it. For back-end we are using the most stable node-express framework with nest.js, mongodb as a database and prisma as our ORM.
 
 ## Challenges we ran into
 
 sj kbffkkf jf
-
-<<<<<<< Updated upstream
 
 ## Accomplishments that we're proud of 🥇🥇
 
@@ -49,11 +47,7 @@ sj kbffkkf jf
 
 ## Accomplishments that we're proud of
 
-> > > > > > > Stashed changes
-
 dkjcjksb nf
-
-<<<<<<< Updated upstream
 
 ## What we learned 👩‍💻👩‍💻
 
@@ -61,8 +55,7 @@ dkjcjksb nf
 
 ## What we learned
 
-> > > > > > > Stashed changes
-> > > > > > > It was a great learning experience for both of us, it was the first time one of us was introduced to Nest.js and typeScript. We built our frontend with typeScript only, so got a lot of errors but I quickly got the hang of it. We also learnt to use Gihub efficiently and its our first time making a detailed Readme file for our users.
+It was a great learning experience for both of us, it was the first time one of us was introduced to Nest.js and typeScript. We built our frontend with typeScript only, so got a lot of errors but I quickly got the hang of it. We also learnt to use Gihub efficiently and its our first time making a detailed Readme file for our users.
 
 ## What's next for MauKerja
 
