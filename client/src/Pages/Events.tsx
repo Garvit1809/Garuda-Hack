@@ -3,6 +3,7 @@ import styled from 'styled-components'
 import Navbar from '../Components/GeneralComponents/Navbar'
 import eventImg1 from '../Assets/eventImg.webp'
 import { useNavigate } from 'react-router-dom'
+import PostEvent from '../Components/EventsComponents/PostEvent'
 
 const Section = styled.div`
 width: 75%;
@@ -54,6 +55,7 @@ const Events = () => {
   return (
     <>
     <Navbar/>
+    <PostEvent/>
     <Section>
       <EventDesc>
         <img src={eventImg1} alt="" />
@@ -93,6 +95,7 @@ const Events = () => {
         <h4>Mode</h4>
       </EventDesc>
     </Section>
+    
     </>
   )
 }

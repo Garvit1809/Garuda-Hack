@@ -30,6 +30,11 @@ display: flex;
 /* border: 5px solid red; */
 
 animation: ${move} 17s linear infinite ${props => props.direction};
+
+.blur{
+    filter: blur(4px);
+   -webkit-filter: blur(4px);  
+}
 `
 
 const ImgContainer = styled.div`
@@ -113,6 +118,7 @@ const Showcase = () => {
 
   const Row1Ref = useRef(null)
   const Row2Ref = useRef(null)
+  const Row3Ref = useRef(null)
 
   return (
     <Section id="showcase">
@@ -134,6 +140,11 @@ const Showcase = () => {
      <NftItem img={img1} number={69} price={3.2} passRef= {Row2Ref} />
      <NftItem img={img1} number={69} price={3.2} passRef= {Row2Ref} />
      <NftItem img={img1} number={69} price={3.2} passRef= {Row2Ref} />
+     </Row>
+     <Row direction="none" ref={Row3Ref}>
+     <div className='blur' > 
+     <NftItem  img={img1} number={234} price={1.8} passRef= {Row3Ref} />
+     </div>
      </Row>
     </Section>
   )

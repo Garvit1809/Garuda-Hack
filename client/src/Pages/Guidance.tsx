@@ -2,6 +2,10 @@ import React from 'react'
 import styled from 'styled-components'
 import Navbar from '../Components/GeneralComponents/Navbar'
 import img from '../Assets/eventImg.webp'
+import PostMentor from '../Components/GuidanceComponents/PostMentor'
+import MentorImg1 from '../Assets/MentorImg1.jpg'
+import {MdPeopleAlt} from 'react-icons/md'
+import Button from '../Components/GeneralComponents/Button'
 
 const Section = styled.div`
 width: 100%;
@@ -23,6 +27,7 @@ margin: 1.5rem 0 2rem 0;
 
 const Guides = styled.div`
 width: 85%;
+box-sizing: border-box;
 /* border: 1px solid red; */
 
 display: grid;
@@ -36,18 +41,150 @@ const Guide = styled.div`
   width: 90%;
   margin: 0 auto;
   margin-bottom: 2rem;
+  box-sizing: border-box;
+
+  h3.JobDesc{
+    padding-left: 1rem;
+    font-weight: 500;
+    font-size: 1rem;
+    color: grey;
+
+    /* color: orange; */
+  }
+
+  h3.experience{
+    padding-left: 1rem;
+    font-weight: 500;
+    font-size: 1rem;
+    color: grey;
+
+    span{
+      font-weight: 700;
+      color: orange
+    }
+  }
+
+  h3.company{
+    padding-left: 1rem;
+    font-weight: 500;
+    font-size: 1rem;
+    color: grey;
+    margin-bottom: 0.6rem;
+
+    span{
+      font-weight: 700;
+      color: orange
+    }
+  }
+
+  h3.fees{
+    padding-left: 1rem;
+    font-weight: 500;
+    font-size: 1.1rem;
+    margin-bottom: 0.4rem;
+
+    span{
+      font-weight: 700;
+      color: orange
+    }
+  }
 `
 
 const Header = styled.div`
-  img{
-    width: 100%;
+  box-sizing: border-box;
+
+  header{
+    /* border: 1px solid blue; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
+
+  img{
+    box-sizing: border-box;
+    width: 20vw;
+    height: 30vh;
+  }
+
+  div{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  h2{
+    padding-left: 1rem;
+    font-weight: 500;
+    font-size: 1.1rem;
+  }
+
+  h3{
+    margin-right: 1rem;
+    display: flex;
+    font-size: 0.9rem;
+    align-items: center;
+    font-weight: 500;
+
+    svg{
+      fill: grey;
+      padding-right: 0.2rem;
+      padding-top: 0.2rem;
+    }
+  }
+`
+
+const Education = styled.div`
+
+/* border: 1px solid black; */
+width: 20vw;
+box-sizing: border-box;
+margin-bottom: 0.4rem;
+
+   h3{
+    padding-left: 1rem;
+    font-weight: 500;
+    font-size: 1.1rem;
+    
+  } 
+
+  p{
+    margin: 0;
+    font-size: 0.9rem;
+    width: 90%;
+    padding-left: 1rem;
+    /* border: 1px solid red; */
+    color: grey;
+    }
+
+`
+
+const Socials = styled.div`
+  /* border: 1px solid black; */
+width: 100%;
+box-sizing: border-box;
+margin-bottom: 1rem;
+
+h3{
+    padding-left: 1rem;
+    font-weight: 500;
+    font-size: 1.1rem;
+    
+  } 
+`
+
+const BecomeMentee = styled.div`
+  /* border: 1px solid red; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1rem;
 `
 
 const Guidance = () => {
   return (
     <>
     <Navbar/>
+    <PostMentor/>
     <Section>
       <Heading>
       <h1>Looking for some personal guidance??</h1>
@@ -56,94 +193,145 @@ const Guidance = () => {
       <Guides>
         <Guide>
           <Header>
-            <img src={img} alt="" />
+            <header>
+            <img src={MentorImg1} alt="" />
+            </header>
             <div>
             <h2>GuideName</h2>
-              <h2>12</h2>
+            <h3><MdPeopleAlt/> <span>12</span></h3>
             </div>
           </Header>
-          <h3>Web Developer</h3>
-          <h3>Experience</h3>
-          <h3>Working at Org name</h3>
-          <h3>Good Work for Community</h3>
-          <h3>Fees:- $10/lesson</h3>
+          <h3 className='JobDesc' >Web Developer</h3>
+          <h3 className='experience' >Experience:- <span>10 Years</span> </h3>
+          <h3 className='company' >Working at <span>Org Name</span></h3>
+          <Education>
+          <h3 className='education' >Education</h3>
+          <p>Zakir Hussain College of Engineering and Texhnology, AMU</p> 
+          </Education>
+          <h3 className='fees' >Fees:- <span>$10/lesson</span></h3>
+          <Socials>
           <h3>Socials</h3>
           <div>
-            <button>Become a mentee</button>
+
           </div>
+          </Socials>
+          <BecomeMentee>
+            <Button text="Become a Mentee" link="#" clr="#fff" backgroundColor="#202020" />
+          </BecomeMentee>
         </Guide>
         <Guide>
           <Header>
-            <img src={img} alt="" />
+            <header>
+            <img src={MentorImg1} alt="" />
+            </header>
             <div>
             <h2>GuideName</h2>
-              <h2>12</h2>
+            <h3><MdPeopleAlt/> <span>12</span></h3>
             </div>
           </Header>
-          <h3>Web Developer</h3>
-          <h3>Experience</h3>
-          <h3>Working at Org name</h3>
-          <h3>Good Work for Community</h3>
-          <h3>Fees:- $10/lesson</h3>
+          <h3 className='JobDesc' >Web Developer</h3>
+          <h3 className='experience' >Experience:- <span>10 Years</span> </h3>
+          <h3 className='company' >Working at <span>Org Name</span></h3>
+          <Education>
+          <h3 className='education' >Education</h3>
+          <p>Zakir Hussain College of Engineering and Texhnology, AMU</p> 
+          </Education>
+          <h3 className='fees' >Fees:- <span>$10/lesson</span></h3>
+          <Socials>
           <h3>Socials</h3>
           <div>
-            <button>Become a mentee</button>
+
           </div>
+          </Socials>
+          <BecomeMentee>
+            <Button text="Become a Mentee" link="#" clr="#fff" backgroundColor="#202020" />
+          </BecomeMentee>
         </Guide>
         <Guide>
           <Header>
-            <img src={img} alt="" />
+            <header>
+            <img src={MentorImg1} alt="" />
+            </header>
             <div>
             <h2>GuideName</h2>
-              <h2>12</h2>
+            <h3><MdPeopleAlt/> <span>12</span></h3>
             </div>
           </Header>
-          <h3>Web Developer</h3>
-          <h3>Experience</h3>
-          <h3>Working at Org name</h3>
-          <h3>Good Work for Community</h3>
-          <h3>Fees:- $10/lesson</h3>
+          <h3 className='JobDesc' >Web Developer</h3>
+          <h3 className='experience' >Experience:- <span>10 Years</span> </h3>
+          <h3 className='company' >Working at <span>Org Name</span></h3>
+          <Education>
+          <h3 className='education' >Education</h3>
+          <p>Zakir Hussain College of Engineering and Texhnology, AMU</p> 
+          </Education>
+          <h3 className='fees' >Fees:- <span>$10/lesson</span></h3>
+          <Socials>
           <h3>Socials</h3>
           <div>
-            <button>Become a mentee</button>
+
           </div>
+          </Socials>
+          <BecomeMentee>
+            <Button text="Become a Mentee" link="#" clr="#fff" backgroundColor="#202020" />
+          </BecomeMentee>
         </Guide>
         <Guide>
           <Header>
-            <img src={img} alt="" />
+            <header>
+            <img src={MentorImg1} alt="" />
+            </header>
             <div>
             <h2>GuideName</h2>
-              <h2>12</h2>
+            <h3><MdPeopleAlt/> <span>12</span></h3>
             </div>
           </Header>
-          <h3>Web Developer</h3>
-          <h3>Experience</h3>
-          <h3>Working at Org name</h3>
-          <h3>Good Work for Community</h3>
-          <h3>Fees:- $10/lesson</h3>
+          <h3 className='JobDesc' >Web Developer</h3>
+          <h3 className='experience' >Experience:- <span>10 Years</span> </h3>
+          <h3 className='company' >Working at <span>Org Name</span></h3>
+          <Education>
+          <h3 className='education' >Education</h3>
+          <p>Zakir Hussain College of Engineering and Texhnology, AMU</p> 
+          </Education>
+          <h3 className='fees' >Fees:- <span>$10/lesson</span></h3>
+          <Socials>
           <h3>Socials</h3>
           <div>
-            <button>Become a mentee</button>
+
           </div>
+          </Socials>
+          <BecomeMentee>
+            <Button text="Become a Mentee" link="#" clr="#fff" backgroundColor="#202020" />
+          </BecomeMentee>
         </Guide>
         <Guide>
           <Header>
-            <img src={img} alt="" />
+            <header>
+            <img src={MentorImg1} alt="" />
+            </header>
             <div>
             <h2>GuideName</h2>
-              <h2>12</h2>
+            <h3><MdPeopleAlt/> <span>12</span></h3>
             </div>
           </Header>
-          <h3>Web Developer</h3>
-          <h3>Experience</h3>
-          <h3>Working at Org name</h3>
-          <h3>Good Work for Community</h3>
-          <h3>Fees:- $10/lesson</h3>
+          <h3 className='JobDesc' >Web Developer</h3>
+          <h3 className='experience' >Experience:- <span>10 Years</span> </h3>
+          <h3 className='company' >Working at <span>Org Name</span></h3>
+          <Education>
+          <h3 className='education' >Education</h3>
+          <p>Zakir Hussain College of Engineering and Texhnology, AMU</p> 
+          </Education>
+          <h3 className='fees' >Fees:- <span>$10/lesson</span></h3>
+          <Socials>
           <h3>Socials</h3>
           <div>
-            <button>Become a mentee</button>
+
           </div>
+          </Socials>
+          <BecomeMentee>
+            <Button text="Become a Mentee" link="#" clr="#fff" backgroundColor="#202020" />
+          </BecomeMentee>
         </Guide>
+
       </Guides>
     </Section>
     </>
