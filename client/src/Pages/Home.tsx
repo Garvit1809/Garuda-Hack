@@ -126,6 +126,10 @@ const Home = () => {
         <ResourcesImage />
       </Section>
       <Footer />
+      <br>
+        </br>
+        <br>
+        </br>
     </>
   )
 }
