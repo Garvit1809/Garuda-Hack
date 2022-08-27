@@ -39,7 +39,7 @@ Building a full web application in 48 hours with just 2 people can be very overw
 
 ## Accomplishments that we're proud of 🥇🥇
 
-dkjcjksb nf
+We are proud of our **social good on education** concept and a great team consisting only of 2 people working on the UI, styling, concept, design, backend servers, database, etc. We are honestly hoping that anyone can reach their dream job by using this web application.
 
 ## What we learned 👩‍💻👩‍💻
 
