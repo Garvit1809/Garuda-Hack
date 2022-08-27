@@ -13,11 +13,11 @@ kjdjcbdhjcb
 
 
 ## What it does
-MauKerja is a web application where students can get job opportunities and can learn and prepare through free resources. We also provide mentorship facilities where experienced folk can become 	**Mentors** and guide others in achieving their goals.
+The aim of MauKerja is to provide top quality education and guidance along with the job opportunities. It is a web application where students can get **Job/Internship opportunities** and can learn and prepare through **free Resources**. We also provide mentorship facilities where experienced folk can become	**Mentors** and guide others in achieving their goals. You can also host **Events** like Hackathons, workshops , seminars.
 
 
 ## How we built it
-lvjkj fvk vkkvf 
+
 
 
 ## Challenges we ran into
@@ -25,7 +25,7 @@ sj kbffkkf jf
 
 
 ## Accomplishments that we're proud of
-dkjcjksb  nf
+kjbvhrb
 
 
 ## What we learned
