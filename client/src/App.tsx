@@ -12,8 +12,9 @@ import Login from './Pages/Login';
 import Register from './Pages/Register';
 import CVResource from './Components/ResourcesComponent/CVResource';
 import WebDevResource from './Components/ResourcesComponent/WebDevResource';
-import AppResource from './Components/ResourcesComponent/AppResource';
+import UiUxResource from './Components/ResourcesComponent/UiUxResource';
 import InterviewResource from './Components/ResourcesComponent/InterviewResource';
+import ComingSoon from './Components/ResourcesComponent/ComingSoon';
  
 function App() {
   return (
@@ -28,9 +29,9 @@ function App() {
       <Route path='/events/event' element={<Event/>} />
       <Route path='/resources/cv-resource' element={<CVResource/>} />
       <Route path='/resources/web-resource' element={<WebDevResource/>} />
-      <Route path='/resources/app-resource' element={<AppResource/>} />
+      <Route path='/resources/uiux-resource' element={<UiUxResource/>} />
       <Route path='/resources/interview-resource' element={<InterviewResource/>} />
-      <Route path='/resources/resource' element={<InterviewResource/>} />
+      <Route path='/resources/coming-soon' element={<ComingSoon/>} />
     </Routes>
   );
 }

@@ -14,6 +14,7 @@ import img9 from '../Assets/DLResource.jpg'
 import img10 from '../Assets/OpenSourceContriResource.png'
 import img11 from '../Assets/MLResource.png'
 import { useNavigate } from "react-router-dom";
+import img12 from '../Assets/UiUxResource.png'
 
 const Section = styled.div`
   width: 100%;
@@ -144,11 +145,15 @@ const Resrc = () => {
   const handleWebClick = () => {
     navigate("/resources/web-resource")
   }
-  const handleAppClick = () => {
-    navigate("/resources/app-resource")
+  const handleUIClick = () => {
+    navigate("/resources/uiux-resource")
   }
   const handleInterviewClick = () => {
     navigate("/resources/interview-resource")
+  }
+
+  const handleEmptyClick = () => {
+    navigate("/resources/coming-soon")
   }
  
   return (
@@ -176,39 +181,39 @@ const Resrc = () => {
             <img src={img2} alt="" />
             <h2>Web Development RoadMap</h2>
           </Course>
-          <Course onClick={handleAppClick} >
-            <img src={img3} alt="" />
-            <h2>Intro to Mobile Development</h2>
-          </Course>
           <Course onClick={handleInterviewClick} >
             <img src={img4} alt="" />
             <h2>Important Interview Skills</h2>
           </Course>
-          <Course>
+          <Course onClick={handleUIClick} >
+            <img src={img12} alt="" />
+            <h2>UI Vs UX</h2>
+          </Course>
+          <Course onClick={handleEmptyClick} >
             <img src={img5} alt="" />
             <h2>BlockChain is the new Era!!</h2>
           </Course>
-          <Course>
+          <Course onClick={handleEmptyClick} >
             <img src={img6} alt="" />
             <h2>Deep Dive to AI around us</h2>
           </Course>
-          <Course>
+          <Course onClick={handleEmptyClick} >
             <img src={img7} alt="" />
             <h2>Get Started with Data Structures and Algorithms</h2>
           </Course>
-          <Course>
+          <Course onClick={handleEmptyClick} >
             <img src={img8} alt="" />
             <h2>What actually is IOT??</h2>
           </Course>
-          <Course>
+          <Course onClick={handleEmptyClick} >
             <img src={img11} alt="" />
             <h2>Learn Machine Learning Concepts</h2>
           </Course>
-          <Course>
+          <Course onClick={handleEmptyClick} >
             <img src={img10} alt="" />
             <h2>Build your career woth Open Source</h2>
           </Course>
-          <Course  >
+          <Course >
             <img className="blur" src={img9} alt="" />
             <h3>Coming Soon</h3>
           </Course>
