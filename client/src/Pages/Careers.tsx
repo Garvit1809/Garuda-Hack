@@ -5,6 +5,8 @@ import PostCareer from '../Components/CareerComponents/PostCareer'
 import Navbar from '../Components/GeneralComponents/Navbar'
 import { getData } from '../lib'
 import careerImg1 from '../Assets/CareerImg1.jpg'
+import {Carrers} from '../Components/CareerComponents/CareerData'
+import Career from '../Components/CareerComponents/Career'
 
 
 const Section = styled.div`
@@ -38,9 +40,13 @@ width: 80vw;
 const Oppo = styled.div`
 /* display: flex; */
 /* flex-wrap: wrap; */
-/* border: 1px solid black; */
+border: 1px solid black;
 display: grid;
 grid-template-columns: auto auto auto;
+
+h1,h2,h3,h4,h5,h6{
+  margin: 0;
+}
 
 div{
   /* border: 1px solid blue; */
@@ -73,10 +79,6 @@ const Careers = () => {
   const [careers, setCareers] = useState([])
   const navigate = useNavigate()
 
-  const careerClick = () => {
-    navigate("/careers/id")
-  }
-
  useEffect(()=>{
   const data: any = getData("http://localhost:4000/careers")
   if(!data.statusCode){
@@ -95,13 +97,24 @@ const Careers = () => {
       </Heading>
     <Opportunity>
     <Oppo>
-    <div onClick={careerClick} >
-      <img src={careerImg1} alt="" />
-      <Desc>
-        <h2>Job Role(PartTime)</h2>
-        <h4>Location</h4>
-      </Desc>
-    </div>
+      {
+        Carrers.map((opportunity,index) => {
+          return (
+            <Career key={index}
+            companyName={opportunity.companyName}
+            companyImageLink={opportunity.companyImageLink}
+            companyWebsite={opportunity.companyWebsite}
+            companyVision={opportunity.companyVision}
+            role={opportunity.role}
+            roleDescription={opportunity.roleDescription}
+            skills={opportunity.skills}
+            jobType={opportunity.jobType}
+            jobLocation={opportunity.jobLocation}
+            userId={opportunity.userId}
+            />
+            )
+          })
+      }
     </Oppo>
     </Opportunity>
     </Section>
