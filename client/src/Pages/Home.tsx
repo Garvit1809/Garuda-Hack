@@ -7,6 +7,11 @@ import ResourcesImg from "../Assets/resources.jpg"
 import Button from '../Components/GeneralComponents/Button'
 import SectionButton from '../Components/GeneralComponents/SectionButton'
 import Footer from '../Components/GeneralComponents/Footer'
+import {BsLinkedin, BsGithub} from 'react-icons/bs'
+import MentorImg1 from '../Assets/mentor1.jpg'
+import MentorImg2 from '../Assets/mentor2.jpg'
+import MentorImg3 from '../Assets/mentor3.jpg'
+import StarImg from "../Assets/star.png"
 
 const Section = styled.div`
 width: 100%;
@@ -93,6 +98,155 @@ const ResourcesImage = styled.div`
   width: 600px;
   box-shadow: 1px 1px 3px black;
 `
+
+const Guides = styled.div`
+width: 85%;
+box-sizing: border-box;
+/* border: 1px solid red; */
+
+display: grid;
+grid-template-columns: auto auto auto;
+`
+
+const Guide = styled.div`
+  display: flex;
+  flex-direction: column;
+  border: 1px solid black;
+  width: 100%;
+  max-width: 300px;
+  margin: 0 auto;
+  margin-bottom: 2rem;
+  box-sizing: border-box;
+  border-radius: 15px;
+  /* box-shadow: 10px 10px black; */
+
+  h3.JobDesc{
+    margin: 0;
+    padding-left: 1rem;
+    font-weight: 500;
+    font-size: 1rem;
+    color: grey;
+
+    /* color: orange; */
+  }
+
+  h3.experience{
+    margin: 0;
+    padding-left: 1rem;
+    font-weight: 500;
+    font-size: 1rem;
+    color: grey;
+
+    span{
+      font-weight: 700;
+      color: orange
+    }
+  }
+
+  h3.company{
+    margin: 0;
+    padding-left: 1rem;
+    font-weight: 500;
+    font-size: 1rem;
+    color: grey;
+    margin-bottom: 0.6rem;
+
+    span{
+      font-weight: 700;
+      color: orange
+    }
+  }
+
+  h3.fees{
+    margin: 0;
+    margin-top: 20px;
+    padding-left: 1rem;
+    font-weight: 500;
+    font-size: 1.1rem;
+    margin-bottom: 0.4rem;
+
+    span{
+      font-weight: 700;
+      color: orange
+    }
+  }
+
+`
+const StarContainer = styled.div`
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    width: 100%;
+    img.star {
+    padding-left: 1rem;
+    width: 20px;
+    height: 20px;
+  }
+    h3.starnum{
+    margin: 0;
+    padding-left: 1rem;
+    font-weight: 500;
+    font-size: 1.1rem;
+    }
+`
+const Header = styled.div`
+  box-sizing: border-box;
+
+  div{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  h2{
+    padding-left: 1rem;
+    font-weight: 500;
+    font-size: 1.1rem;
+    margin: 0;
+  }
+
+  h3{
+    margin-right: 1rem;
+    display: flex;
+    font-size: 0.9rem;
+    align-items: center;
+    font-weight: 500;
+
+    svg{
+      fill: grey;
+      padding-right: 0.2rem;
+      padding-top: 0.2rem;
+    }
+  }
+`
+
+const ImgContainer = styled.div`
+    /* border: 1px solid blue; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 15px;
+    margin-bottom: 0.6rem;
+    
+    img{
+      box-sizing: border-box;
+      border-top-left-radius: 15px;
+      border-top-right-radius: 15px;
+      width: 100%;
+      height: 30vh;
+      object-fit: cover;
+  }
+`
+
+const BecomeMentee = styled.div`
+  /* border: 1px solid red; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1rem;
+  margin-top: 1rem;
+`
+
 const Home = () => {
   return (
     <>
@@ -108,7 +262,7 @@ const Home = () => {
       </Cover>
     </Wrapper>
     <div id="mentor" />
-    <Title id="mentor">Learn from the Expert</Title>
+    <Title>Learn from the Expert</Title>
     <Section>
         <MentorsImage /> 
         <TextContainer>
@@ -116,8 +270,65 @@ const Home = () => {
         <Button text="Get Mentor" link="/mentors" clr="#fff" backgroundColor="#202020" />
         </TextContainer>
       </Section>
+      <div id="top-mentor" />
+    <Title>Our Most Popular Mentors</Title>
+    <Section>
+    <Guides>
+        <Guide>
+          <Header>
+            <ImgContainer>
+            <img src={MentorImg1} alt="" />
+            </ImgContainer>
+            <h2 className='name'>Mark Armstrong</h2>
+          </Header>
+          <div></div>
+          <h3 className='JobDesc' >Web Developer at Google</h3>
+          <h3 className='fees' >Fees: <span>$15/lesson</span></h3>
+          <StarContainer>
+          <img className='star' src={StarImg} alt="" /><h3 className='starnum'>4.8</h3>
+          </StarContainer>
+          <BecomeMentee>
+            <Button text="Become a Mentee" link="#" clr="#fff" backgroundColor="#202020" />
+          </BecomeMentee>
+        </Guide>
+        <Guide>
+          <Header>
+            <ImgContainer>
+            <img src={MentorImg2} alt="" />
+            </ImgContainer>
+            
+            <h2 className='name'>Daniel Green</h2>
+            
+          </Header>
+          <h3 className='JobDesc'>UX Designer at Airbnb</h3>
+          <h3 className='fees' >Fees: <span>$10/lesson</span></h3>
+          <StarContainer>
+          <img className='star' src={StarImg} alt="" /><h3 className='starnum'>4.8</h3>
+          </StarContainer>
+          <BecomeMentee>
+            <Button text="Become a Mentee" link="#" clr="#fff" backgroundColor="#202020" />
+          </BecomeMentee>
+        </Guide>
+        <Guide>
+          <Header>
+            <ImgContainer>
+            <img src={MentorImg3} alt="" />
+            </ImgContainer>
+            <h2 className='name'>Anthony Josh</h2>
+          </Header>
+          <h3 className='JobDesc'>Tech Startup CEO</h3>
+          <h3 className='fees' >Fees: <span>$12/lesson</span></h3>
+          <StarContainer>
+          <img className='star' src={StarImg} alt="" /><h3 className='starnum'>4.8</h3>
+          </StarContainer>
+          <BecomeMentee>
+            <Button text="Become a Mentee" link="#" clr="#fff" backgroundColor="#202020" />
+          </BecomeMentee>
+        </Guide>
+      </Guides>
+    </Section>
     <div id="resources" />
-    <Title id="resources">Lots of Resources</Title>
+    <Title>Lots of Resources</Title>
       <Section>
         <TextContainer>
         <div className='description'>Finding good study materials to prepare yourself for a job is sometimes very challenging. Worry no more, at MauKerja you can find a lot of good resources specially made for people who want to get ready for their job.</div>
