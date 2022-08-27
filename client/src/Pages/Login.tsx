@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 import styled from 'styled-components'
 import Button from '../Components/GeneralComponents/Button'
 import Navbar from '../Components/GeneralComponents/Navbar'
@@ -64,7 +65,7 @@ const Login = () => {
       <Button text="Login" link="#" clr="#fff" backgroundColor="#202020" />
       <Container>
       <div className="label">Dont have an account?</div>
-      <a href='#'>Register Here</a>
+      <Link to="/">Register Here</Link>
       </Container>
     </Card>
     </Wrapper>
