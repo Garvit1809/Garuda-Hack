@@ -6,8 +6,6 @@ import { useNavigate } from 'react-router-dom'
 import PostEvent from '../Components/EventsComponents/PostEvent'
 import { getData } from '../lib'
 import Box from '@mui/material/Box';
-import Button from '@mui/material/Button';
-import Typography from '@mui/material/Typography';
 import Modal from '@mui/material/Modal';
 import useStyles from '../Components/CareerComponents/CareersStyles'
 

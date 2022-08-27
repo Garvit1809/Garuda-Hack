@@ -8,6 +8,10 @@ import {MdPeopleAlt} from 'react-icons/md'
 import Button from '../Components/GeneralComponents/Button'
 import {BsLinkedin, BsGithub} from 'react-icons/bs'
 import { getData } from '../lib'
+import Box from '@mui/material/Box';
+import Modal from '@mui/material/Modal';
+import useStyles from '../Components/CareerComponents/CareersStyles'
+
 
 const Section = styled.div`
 width: 100%;
@@ -220,7 +224,25 @@ const BecomeMentee = styled.div`
   margin-bottom: 1rem;
 `
 
+const style = {
+  position: "absolute" as "absolute",
+  top: "50%",
+  left: "50%",
+  transform: "translate(-50%, -50%)",
+  width: 700,
+  bgcolor: "background.paper",
+  border: "1px solid #C4C4C4",
+  boxShadow: 24,
+  p: 4,
+};
+
 const Guidance = () => {
+
+  const classes = useStyles();
+  const [open, setOpen] = React.useState(false);
+  const handleOpen = () => setOpen(true);
+  const handleClose = () => setOpen(false)
+
   const [mentors, setMentors] = useState([])
 
   useEffect(()=>{
@@ -234,7 +256,44 @@ const Guidance = () => {
   return (
     <>
     <Navbar/>
+    <div onClick={handleOpen} >
     <PostMentor/>
+    </div>
+    <Modal
+        open={open}
+        onClose={handleClose}
+        aria-labelledby="modal-modal-title"
+        aria-describedby="modal-modal-description"
+      >
+        <Box sx={style} className={classes.modal}>
+          <h1>Want to become a Mentor?? Provide us your Details!!</h1>
+          <form action="">
+          <h3>Your Name</h3>
+          <input type="text" name="" id="" placeholder='Enter Your Name' />
+          <h3>Profile Photo</h3>
+          <input type="text" name="" id="" placeholder='Upload Your Profile Photo'/>
+          <h3>Expertise</h3>
+          <input type="text" name="" id="" placeholder='Guidance do u want to provide' />
+          <h3>Years of Experience</h3>
+          <input type="number" name="" id="" placeholder='How long have you been in this industry' />
+          <h3>Working At</h3>
+          <input type="text" name="" id="" placeholder='Currently Working at' />
+          <h3>Worked At</h3>
+          <input type="text" name="" id="" placeholder='Previously Working at' />
+          <h3>Education</h3>
+          <input type="text" name="" id="" placeholder='Your highest educational qualification' />
+          <h3>Fees per lesson</h3>
+          <input type="text" name="" id="" placeholder="Fees per lesson($)" />
+          <h3>Linkedin Link</h3>
+          <input type="text" name="" id="" placeholder="Enter your LinkedIn Profile" />
+          <h3>Github Link</h3>
+          <input type="text" name="" id="" placeholder="Enter your Github Profile" />
+          <h3>Other Link</h3>
+          <input type="text" name="" id="" placeholder="Any Other Link you want to provide" />
+          <button>Become Mentor</button>
+        </form>
+        </Box>
+      </Modal>
     <Section>
       <Heading>
       <h1>Looking for some personal guidance??</h1>
