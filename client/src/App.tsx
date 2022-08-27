@@ -29,7 +29,7 @@ function App() {
       <Route path='/events' element={<Events/>} />
       <Route path='/mentors' element={<Guidance/>} />
       <Route path='/resources/id' element={<Resource/>} />
-      <Route path='/events/id' element={<Event/>} />
+      <Route path='/events/event' element={<Event/>} />
     </Routes>
   );
 }
