@@ -1,9 +1,9 @@
 import React from 'react'
 import styled from 'styled-components'
 import Navbar from '../Components/GeneralComponents/Navbar'
-import img from '../Assets/eventImg.webp'
 import PostMentor from '../Components/GuidanceComponents/PostMentor'
 import MentorImg1 from '../Assets/MentorImg1.jpg'
+import MentorImg2 from '../Assets/MentorImg2.jpg'
 import {MdPeopleAlt} from 'react-icons/md'
 import Button from '../Components/GeneralComponents/Button'
 
@@ -42,6 +42,7 @@ const Guide = styled.div`
   margin: 0 auto;
   margin-bottom: 2rem;
   box-sizing: border-box;
+  border-radius: 15px;
 
   h3.JobDesc{
     padding-left: 1rem;
@@ -93,19 +94,6 @@ const Guide = styled.div`
 const Header = styled.div`
   box-sizing: border-box;
 
-  header{
-    /* border: 1px solid blue; */
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-
-  img{
-    box-sizing: border-box;
-    width: 20vw;
-    height: 30vh;
-  }
-
   div{
     display: flex;
     align-items: center;
@@ -130,6 +118,24 @@ const Header = styled.div`
       padding-right: 0.2rem;
       padding-top: 0.2rem;
     }
+  }
+`
+
+const ImgContainer = styled.div`
+    /* border: 1px solid blue; */
+    display: flex;
+    align-items: center;
+    border-radius: 15px;
+    justify-content: center;
+    margin-bottom: 0.6rem;
+    
+    img{
+      box-sizing: border-box;
+      border-top-left-radius: 15px;
+      border-top-right-radius: 15px;
+      width: 25vw;
+      height: 30vh;
+      object-fit: cover;
   }
 `
 
@@ -193,9 +199,9 @@ const Guidance = () => {
       <Guides>
         <Guide>
           <Header>
-            <header>
+            <ImgContainer>
             <img src={MentorImg1} alt="" />
-            </header>
+            </ImgContainer>
             <div>
             <h2>GuideName</h2>
             <h3><MdPeopleAlt/> <span>12</span></h3>
@@ -221,9 +227,9 @@ const Guidance = () => {
         </Guide>
         <Guide>
           <Header>
-            <header>
+            <ImgContainer>
             <img src={MentorImg1} alt="" />
-            </header>
+            </ImgContainer>
             <div>
             <h2>GuideName</h2>
             <h3><MdPeopleAlt/> <span>12</span></h3>
@@ -249,9 +255,9 @@ const Guidance = () => {
         </Guide>
         <Guide>
           <Header>
-            <header>
-            <img src={MentorImg1} alt="" />
-            </header>
+            <ImgContainer>
+            <img src={MentorImg2} alt="" />
+            </ImgContainer>
             <div>
             <h2>GuideName</h2>
             <h3><MdPeopleAlt/> <span>12</span></h3>
@@ -277,9 +283,11 @@ const Guidance = () => {
         </Guide>
         <Guide>
           <Header>
-            <header>
-            <img src={MentorImg1} alt="" />
-            </header>
+            <ImgContainer>
+            <div>
+            <img src={MentorImg2} alt="" />
+            </div>
+            </ImgContainer>
             <div>
             <h2>GuideName</h2>
             <h3><MdPeopleAlt/> <span>12</span></h3>
@@ -305,9 +313,9 @@ const Guidance = () => {
         </Guide>
         <Guide>
           <Header>
-            <header>
+            <ImgContainer>
             <img src={MentorImg1} alt="" />
-            </header>
+            </ImgContainer>
             <div>
             <h2>GuideName</h2>
             <h3><MdPeopleAlt/> <span>12</span></h3>
