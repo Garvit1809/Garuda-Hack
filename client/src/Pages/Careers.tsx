@@ -15,6 +15,15 @@ align-items: center;
 
 `
 
+const Heading = styled.div`
+  margin-bottom: 0.4rem;
+h1{
+  font-size: 2rem;
+  font-weight: 400;
+  /* border: 1px solid red; */
+}
+`
+
 const Opportunity = styled.div`
 width: 80%;
 /* border: 1px solid black; */
@@ -25,13 +34,13 @@ const Oppo = styled.div`
 /* flex-wrap: wrap; */
 /* border: 1px solid black; */
 display: grid;
-grid-template-columns: auto auto auto auto;
+grid-template-columns: auto auto auto;
 
 div{
   border: 1px solid blue;
   width: 90%;
   margin: 0 auto;
-  margin-bottom: 1rem;
+  margin-bottom: 2rem;
   height: 30vh;
   cursor: pointer;
   transition: all 0.2s ease;
@@ -55,7 +64,10 @@ const Careers = () => {
     <>
     <Navbar/>
     <Section>
+      <Heading>
+
     <h1>Looking to start a new career? Get started here!</h1>
+      </Heading>
     <Opportunity>
     <Oppo>
     <div onClick={careerClick} >Lorem ipsum dolor sit amet.</div>
