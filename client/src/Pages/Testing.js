@@ -122,7 +122,7 @@ const Showcase = () => {
 
   return (
     <Section id="showcase">
-     <Row direction="none" ref={Row1Ref}>
+     <Row direction="reverse" ref={Row1Ref}>
      <NftItem img={img1} number={234} price={1.8} passRef= {Row1Ref} />
      <NftItem img={img1} number={384} price={1.2} passRef= {Row1Ref} />
      <NftItem img={img1} number={986} price={2.8} passRef= {Row1Ref} />
@@ -131,19 +131,13 @@ const Showcase = () => {
      <NftItem img={img1} number={125} price={3.7} passRef= {Row1Ref} />
      <NftItem img={img1} number={125} price={3.7} passRef= {Row1Ref} />
      </Row>
-     <Row direction="reverse" ref={Row2Ref}>
+     <Row direction="none" ref={Row2Ref}>
      <NftItem img={img1} number={528} price={7.9} passRef= {Row2Ref} />
      <NftItem img={img1} number={765} price={0.8} passRef= {Row2Ref} />
      <NftItem img={img1} number={91} price={1.3} passRef= {Row2Ref} />
      <NftItem img={img1} number={104} price={4.1} passRef= {Row2Ref} />
+     <div className='blur' >  
      <NftItem img={img1} number={69} price={3.2} passRef= {Row2Ref} />
-     <NftItem img={img1} number={69} price={3.2} passRef= {Row2Ref} />
-     <NftItem img={img1} number={69} price={3.2} passRef= {Row2Ref} />
-     <NftItem img={img1} number={69} price={3.2} passRef= {Row2Ref} />
-     </Row>
-     <Row direction="none" ref={Row3Ref}>
-     <div className='blur' > 
-     <NftItem  img={img1} number={234} price={1.8} passRef= {Row3Ref} />
      </div>
      </Row>
     </Section>

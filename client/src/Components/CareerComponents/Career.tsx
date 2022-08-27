@@ -11,8 +11,8 @@ const Section = styled.div`
   cursor: pointer;
   transition: all 0.2s ease;
   -webkit-box-shadow: 3px 3px 10px 1px rgba(0,0,0,0.75);
--moz-box-shadow: 3px 3px 10px 1px rgba(0,0,0,0.75);
-box-shadow: 3px 3px 10px 1px rgba(0,0,0,0.75);
+-moz-box-shadow: 1px 1px 5px 1px rgba(0,0,0,0.75);
+box-shadow: 1px 1px 5px 1px rgba(0,0,0,0.75);
 
 h1,h2,h3,h4,h5,h6{
   margin: 0;
@@ -21,7 +21,7 @@ h1,h2,h3,h4,h5,h6{
   &:hover{
     /* transform: scale(1.1); */
     transform: translateY(-5%);
-    -webkit-box-shadow: 11px 10px 33px 1px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 6px 5px 15px 1px rgba(0,0,0,0.75);
 -moz-box-shadow: 11px 10px 33px 1px rgba(0,0,0,0.75);
 box-shadow: 11px 10px 33px 1px rgba(0,0,0,0.75);
   }

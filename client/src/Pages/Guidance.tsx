@@ -25,6 +25,22 @@ h1,h2,h3,h4,h5,h6{
 
 const Heading = styled.div`
 margin: 1.5rem 0 2rem 0;
+/* border: 1px solid red; */
+width: 100%;
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+
+h1{
+  font-size: 2rem;
+  font-weight: 500;
+}
+
+h3{
+  font-size: 1.5rem;
+  font-weight: 400;
+}
 `
 
 const Guides = styled.div`
@@ -45,6 +61,7 @@ const Guide = styled.div`
   margin-bottom: 2rem;
   box-sizing: border-box;
   border-radius: 15px;
+  /* box-shadow: 10px 10px black; */
 
   h3.JobDesc{
     padding-left: 1rem;
