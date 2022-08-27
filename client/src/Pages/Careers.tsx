@@ -104,7 +104,9 @@ const Careers = () => {
           <h3>Company's Website</h3>
           <input type="text" name="" id="" placeholder='Enter Companys Website' />
           <h3>Role</h3>
-          <input type="text" name="" id="" placeholder='For what Role you are looking for ?' />
+          <input type="text" name="" id="" placeholder='For what Role you are looking for?' />
+          <h3>Role Type</h3>
+          <input type="text" name="" id="" placeholder='Full Time || Part Time' />
           <h3>Work</h3>
           <input type="text" name="" id="" placeholder='Remote Work || InOffice Work' />
           <h3>Location</h3>

@@ -21,9 +21,16 @@ h1,h2,h3,h4,h5,h6{
   &:hover{
     /* transform: scale(1.1); */
     transform: translateY(-5%);
-    -webkit-box-shadow: 6px 5px 15px 1px rgba(0,0,0,0.75);
--moz-box-shadow: 11px 10px 33px 1px rgba(0,0,0,0.75);
-box-shadow: 11px 10px 33px 1px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 4px 3px 8px 1px rgba(0,0,0,0.75);
+-moz-box-shadow: 6px 5px 16px 1px rgba(0,0,0,0.75);
+box-shadow: 5px 5px 16px 1px rgba(0,0,0,0.75);
+  }
+
+  h2{
+    font-size: 1.2rem;
+    font-weight: 500;
+    margin-left: 1rem;
+    margin-bottom: 0.2rem;
   }
 `
 
@@ -33,6 +40,47 @@ const ImgContainer = styled.div`
     width: 25vw;
     object-fit: cover;
   }
+`
+
+const Role = styled.div`
+display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* border: 1px solid red; */
+    width: 90%;
+    margin-left: 1rem;
+    margin-bottom: 0.2rem;
+
+    div{
+      /* border: 1px solid red; */
+      width: 50%;
+    }
+
+    h3{
+      font-size: 0.9rem;
+      font-weight: 500;
+
+    }
+
+    h3.role{
+      color: orange;
+      font-weight: 700;
+      font-size: 1.2rem;
+    }
+`
+
+const Location = styled.div`
+   margin-left: 1rem;
+   
+   h3{
+     font-size: 1rem;
+     font-weight: 500;
+
+   }
+`
+
+const Links = styled.div`
+
 `
   
 
@@ -55,8 +103,14 @@ const Career = (props: opportunity) => {
       <ImgContainer>
       <img src={props.companyImageLink} alt="" />
       </ImgContainer>
-      <h3>{props.companyName}</h3>
-      <h3>{props.role}</h3>
+      <h2>{props.companyName}</h2>
+      <Role>
+        <div>
+      <h3 className='role' >{props.role}</h3>
+        </div>
+      <h3>Full Time</h3>
+      </Role>
+      <Location>
       {
         props.jobType === "Work from Home" ? 
         <h3>
@@ -64,6 +118,10 @@ const Career = (props: opportunity) => {
         </h3>
         : <h3>{props.jobLocation}</h3>
       }
+      </Location>
+      <Links>
+      
+      </Links>
     </Section>
   )
 }
