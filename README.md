@@ -53,3 +53,69 @@ We are planning to add a lot of features to the application to make it useful fo
 - **Improving Events Facilities** :- Events are essential for students as it improves their technical, behavioural and communication skills. Through MauKerja, one can attend any event and can also host an event. The event may be a hackathon, workshop or a seminar. We would like to add video conference like features and chat boxes through whichfolks attending an event can interact on the application only
 - **Chat Box for Mentors** :- We will add a chat box for each mentor so that any mentee who's interested in being guded can interact directly to them.
 - **Integrating Payment Methods** :- As we are allowing Mentors to give private/group lessons to the students, we'll make sure that they can make some side earnings too. We will add payments methods in the guidance section and would keep in check if they are charging high😄
+
+---
+
+# 🖼️ Some Glimpse of the Site
+
+### 1. Home Page
+
+![homeImg](https://user-images.githubusercontent.com/89806031/178814155-9a31f975-aee1-4630-9d05-29b30b14b46b.png)
+![homeImg2](https://user-images.githubusercontent.com/89806031/179440842-f424fc5d-8f25-4a0e-9b7a-6fdd8f92c091.png)
+
+
+### 2. Therapy Page
+
+You can listen to some stress-relieving music 😇, can do yoga and meditation by watching tutorials, watch some funny videos to get some laugh and much more on the therapy section. You can filter the videos acccordingly 👇👇
+
+![therapyImg2](https://user-images.githubusercontent.com/89806031/178817207-9b3f5ef3-449d-4121-8d96-37637f829983.png)
+
+Filtered Method Videos 👇👇
+![therapyImg1](https://user-images.githubusercontent.com/89806031/178816259-f7a1c48d-0b26-48e4-8660-86d88828291d.png)
+
+### 3. Diet Page
+
+A healthy diet plays an important role in reducing stress and anxiety. We have a diet section where you can search for recipes of any ingredient.
+![DietImg1](https://user-images.githubusercontent.com/89806031/178817824-5cf15ef6-3720-4d51-b45c-9287eb31cb1b.png)
+
+There is a small box having a list of ingredients 🍈🥑 which help in reducing stress as well as anxiety.
+![dietImg2](https://user-images.githubusercontent.com/89806031/178822090-fd452a8c-276e-4590-b3a2-562141824683.png)
+
+You can look recipes for any ingredient from the Ingredient-Box. By <b><i>Clicking</i></b> on the recipe image you can get more information about that recipe 😋
+![dietImg3](https://user-images.githubusercontent.com/89806031/178822706-714f2fc4-e592-4fa1-a57c-ac41494c0784.png)
+
+
+### 4. Diary Page
+
+If you struggle with stress, depression, or anxiety, keeping a journal can be a great Idea. Keep a track of your daily mood with our diary section.
+![diaryImg1](https://user-images.githubusercontent.com/89806031/183259613-e0f0840f-7028-448a-8037-d1b573bc4cbf.png)
+
+You can also view your diary entries 📖 
+![diaryImg2](https://user-images.githubusercontent.com/89806031/183259724-351be00c-0555-4406-9bf5-639f0ff49a59.png)
+
+
+
+### 5. Chat Page
+
+Lack of social interactions also damages mental health. But don't worry, we have a chat section where you can interact with other people facing same issues.
+![chatImg1](https://user-images.githubusercontent.com/89806031/178890614-93a7cbaf-0929-4ef8-ae64-3a95d9cb52fa.png)
+
+![chatImg2](https://user-images.githubusercontent.com/89806031/178890696-97bdbca8-1266-4837-a588-f9c003098139.png)
+
+
+### 6. Authentication Pages
+
+SignUp Page
+![authImg1](https://user-images.githubusercontent.com/89806031/178909035-3f754068-8da8-45c9-b57d-3a5e814010f7.png)
+
+Login Page
+![autImg2](https://user-images.githubusercontent.com/89806031/178909075-7a5029d8-4907-440e-91a9-61f8c78ffad9.png)
+
+
+### 7. SetAvatar Page
+
+After signing up, you would come across this page where you have to pick an Avatar as your progfile image.
+![avatarImg](https://user-images.githubusercontent.com/89806031/178909724-6fa3babe-d03f-4ffd-ba6e-0eee0efdfb99.png)
+
+
+---
