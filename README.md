@@ -39,21 +39,13 @@ We used React with some styled component for front-end UI and our most beloved n
 
 ## Challenges we ran into
 
-sj kbffkkf jf
+Building a full web application in 48 hours with just 2 people can be very overwhelming, intense communication to work on the app is the key for us to complete this submission
 
 ## Accomplishments that we're proud of 🥇🥇
-
-# kjbvhrb
-
-## Accomplishments that we're proud of
 
 dkjcjksb nf
 
 ## What we learned 👩‍💻👩‍💻
-
-=======
-
-## What we learned
 
 It was a great learning experience for both of us, it was the first time one of us was introduced to Nest.js and typeScript. We built our frontend with typeScript only, so got a lot of errors but I quickly got the hang of it. We also learnt to use Gihub efficiently and its our first time making a detailed Readme file for our users.
 
