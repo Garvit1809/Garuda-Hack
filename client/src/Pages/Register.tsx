@@ -47,7 +47,23 @@ const InputBox = styled.input`
 const Register = () => {
   return (
     <>
-  
+    <Navbar/>
+    <Wrapper>
+    <Card>
+      <Container>
+      <h3 className='content'>Register an Account</h3>
+      </Container>
+      <Container>
+      <InputBox type="name" className="name" name="name" placeholder='Name' />
+      <InputBox type="email" className="email" name="email" placeholder='Email' />
+      <InputBox type="password" className="password" name="email" placeholder='Password'  />
+      <InputBox type="password" className="confirm-password" name="confirm-password" placeholder='Confirm Password'  />
+      </Container>
+      <Container>
+      <Button text="Submit" link="#" clr="#fff" backgroundColor="#202020" />
+      </Container>
+    </Card>
+    </Wrapper>
     </>
   )
 }
