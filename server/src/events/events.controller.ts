@@ -3,6 +3,7 @@ import { EventsService } from './events.service';
 import { CreateEventDto } from './dto/create-event.dto';
 import { UpdateEventDto } from './dto/update-event.dto';
 import { QueryEventEntity } from './entity/query-event.entity';
+import { AttendEventDto } from './dto/attend-event.dto';
 
 @Controller('events')
 export class EventsController {
@@ -11,6 +12,11 @@ export class EventsController {
   @Post()
   create(@Body() createEventDto: CreateEventDto) {
     return this.eventsService.create(createEventDto);
+  }
+
+  @Post("join")
+  join(@Body() attendEventDto: AttendEventDto) {
+    return this.eventsService.join(attendEventDto);
   }
 
   @Get()

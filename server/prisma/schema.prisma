@@ -44,7 +44,7 @@ model Event {
   description String
   location    String
   online      Boolean
-  attendees   Int?
+  attendees   String[]
   dateStart   DateTime
   dateEnd     DateTime
   content     String
