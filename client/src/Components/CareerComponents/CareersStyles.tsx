@@ -55,6 +55,13 @@ export default makeStyles(() => ({
            
         },
 
+        '& div': {
+            width: '80%',
+            display: 'flex',
+            alignItems: 'center',
+            justifyContent: 'space-between'
+        },
+
         '& textarea': {
             width: '80%',
             height: '5rem',
@@ -64,7 +71,7 @@ export default makeStyles(() => ({
             border: '1px solid #C4C4C4',
             fontWeight: '400',
             fontSize: '16px',
-            color: '#DADADA',
+            color: '#2B2A35',
             padding: '0.4rem 0.8rem 0 0.8rem',
 
             '&:focus': {
