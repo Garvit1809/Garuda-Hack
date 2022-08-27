@@ -4,6 +4,7 @@ import { ObjectId } from 'bson';
 import { PrismaService } from 'src/prisma/prisma.service';
 import { CreateCareerDto } from './dto/create-career.dto';
 import { UpdateCareerDto } from './dto/update-career.dto';
+import { QueryCareerEntity } from './entity/query-career.entity';
 
 @Injectable()
 export class CareersService {
@@ -27,20 +28,41 @@ export class CareersService {
 
   }
 
-  async findAll() {
-    try {
-      const career = await this.prisma.career.findMany()
-      return career
-    } catch (error) {
-      if(error instanceof PrismaClientKnownRequestError){
-        if(error.code === 'P2002'){
-            throw new ForbiddenException('Something went wrong, please try again later')
+  async findAll(query: QueryCareerEntity) {
+    if(!query.role){
+      try {
+        const career = await this.prisma.career.findMany()
+        return career
+      } catch (error) {
+        if(error instanceof PrismaClientKnownRequestError){
+          if(error.code === 'P2002'){
+              throw new ForbiddenException('Something went wrong, please try again later')
+          }
+        }
+      }
+    } else {
+      try {
+        const career = await this.prisma.career.findMany({
+          where:{
+            role: {
+              contains: query.role
+            }
+          }
+        })
+        return career
+      } catch (error) {
+        if(error instanceof PrismaClientKnownRequestError){
+          if(error.code === 'P2002'){
+              throw new ForbiddenException('Something went wrong, please try again later')
+          }
         }
       }
     }
+
   }
 
   async findOne(id: string) {
+    console.log(id)
     try {
       const career = await this.prisma.career.findFirst({
         where: {

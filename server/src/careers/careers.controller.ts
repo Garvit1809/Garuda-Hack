@@ -1,7 +1,8 @@
-import { Controller, Get, Post, Body, Patch, Param, Delete } from '@nestjs/common';
+import { Controller, Get, Post, Body, Patch, Param, Delete, Query } from '@nestjs/common';
 import { CareersService } from './careers.service';
 import { CreateCareerDto } from './dto/create-career.dto';
 import { UpdateCareerDto } from './dto/update-career.dto';
+import { QueryCareerEntity } from './entity/query-career.entity';
 
 @Controller('careers')
 export class CareersController {
@@ -13,8 +14,8 @@ export class CareersController {
   }
 
   @Get()
-  findAll() {
-    return this.careersService.findAll();
+  findAll(@Query() query: QueryCareerEntity) {
+    return this.careersService.findAll(query);
   }
 
   @Get(':id')
