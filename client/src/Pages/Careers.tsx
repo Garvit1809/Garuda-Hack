@@ -1,7 +1,8 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import { useNavigate } from 'react-router-dom'
 import styled from 'styled-components'
 import Navbar from '../Components/GeneralComponents/Navbar'
+import { getData } from '../lib'
 
 const Section = styled.div`
 width: 100%;
@@ -44,12 +45,20 @@ div{
 `
 
 const Careers = () => {
-
+  const [careers, setCareers] = useState([])
   const navigate = useNavigate()
 
   const careerClick = () => {
     navigate("/careers/id")
   }
+
+ useEffect(()=>{
+  const data: any = getData("http://localhost:4000/careers")
+  if(!data.statusCode){
+    setCareers(data)
+    console.log(data)
+  }
+ }, [])
 
   return (
     <>
