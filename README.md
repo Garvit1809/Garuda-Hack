@@ -35,7 +35,7 @@ The aim of MauKerja is to provide top quality education and guidance along with 
 
 ## How we built it 🛠⚒⚙
 
-We used React with some styled component for front-end UI and our most beloved node.js to run it. For back-end we are using the most stable node-express framework with nest.js, mongodb as a database and prisma as our ORM.
+We used React.js with some styled-components for the front-end UI and our most beloved node.js to run it on the front-end server. For the back-end, we are using the most stable node-express framework server with nest.js, then connecting it to MongoDB as our database to store some data, and finally, we use Prisma as our ORM.
 
 ## Challenges we ran into
 
