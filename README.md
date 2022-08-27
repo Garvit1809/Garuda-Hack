@@ -23,11 +23,7 @@ The site is deployed through heroku, which you can view from [here](https://stre
 
 ## Inspiration
 
-# kjdjcbdhjcb
-
-## Inspiration
-
-kjdjcbdhjcb
+Indonesia is one of the largest archipelagic countries in the world which has around 18,110 islands. With so many islands in Indonesia, the gap in the quality of education is quite visible in areas far from the capital, this greatly affects people who want to achieve their dream job since childhood because the materials tested in the job entrance exam are very different from what they learn in school, especially if the school is far from the capital. With this current issue, we are inspired to give everyone the same opportunity to reach their dream job by learning directly from experienced people and providing them easy access to lots of learning resources to prepare for their future dream job.
 
 ## What it does
 
