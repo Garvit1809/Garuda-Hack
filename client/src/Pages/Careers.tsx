@@ -1,13 +1,24 @@
 import React, { useEffect, useState } from 'react'
 import { useNavigate } from 'react-router-dom'
 import styled from 'styled-components'
+import PostCareer from '../Components/CareerComponents/PostCareer'
 import Navbar from '../Components/GeneralComponents/Navbar'
 import { getData } from '../lib'
+import careerImg1 from '../Assets/CareerImg1.jpg'
+import {Carrers} from '../Components/CareerComponents/CareerData'
+import Career from '../Components/CareerComponents/Career'
+
+import Box from '@mui/material/Box';
+import Button from '@mui/material/Button';
+import Typography from '@mui/material/Typography';
+import Modal from '@mui/material/Modal';
+import useStyles from '../Components/CareerComponents/CareersStyles'
 
 const Section = styled.div`
 width: 100%;
 min-height: calc(100vh - 4rem);
 /* border: 1px solid red; */
+position: relative;
 
 display: flex;
 flex-direction: column;
@@ -16,41 +27,47 @@ align-items: center;
 
 `
 
+const Heading = styled.div`
+  margin-bottom: 1rem;
+h1{
+  /* margin: 0; */
+  font-size: 2rem;
+  font-weight: 400;
+  /* border: 1px solid red; */
+}
+`
+
 const Opportunity = styled.div`
-width: 80%;
-/* border: 1px solid black; */
+width: 80vw;
 `
 
 const Oppo = styled.div`
-/* display: flex; */
-/* flex-wrap: wrap; */
 /* border: 1px solid black; */
 display: grid;
-grid-template-columns: auto auto auto auto;
-
-div{
-  border: 1px solid blue;
-  width: 90%;
-  margin: 0 auto;
-  margin-bottom: 1rem;
-  height: 30vh;
-  cursor: pointer;
-  transition: all 0.2s ease;
-
-  &:hover{
-    /* transform: scale(1.1); */
-    transform: translateY(-5%);
-  }
-}
+grid-template-columns: auto auto auto;
 `
+
+const style = {
+  position: "absolute" as "absolute",
+  top: "50%",
+  left: "50%",
+  transform: "translate(-50%, -50%)",
+  width: 700,
+  bgcolor: "background.paper",
+  border: "1px solid #C4C4C4",
+  boxShadow: 24,
+  p: 4,
+};
+
 
 const Careers = () => {
   const [careers, setCareers] = useState([])
   const navigate = useNavigate()
 
-  const careerClick = () => {
-    navigate("/careers/id")
-  }
+  const classes = useStyles();
+  const [open, setOpen] = React.useState(false);
+  const handleOpen = () => setOpen(true);
+  const handleClose = () => setOpen(false);
 
  useEffect(()=>{
   const data: any = getData("http://localhost:4000/careers")
@@ -60,19 +77,68 @@ const Careers = () => {
   }
  }, [])
 
+ const handlePostCareer = () => {
+  alert("Hello")
+}
+
   return (
     <>
     <Navbar/>
     <Section>
-    <h1>Looking to start a new career? Get started here!</h1>
+      <div onClick={handleOpen} > 
+      <PostCareer />
+      </div>
+      <Modal
+        open={open}
+        onClose={handleClose}
+        aria-labelledby="modal-modal-title"
+        aria-describedby="modal-modal-description"
+      >
+        <Box sx={style} className={classes.modal}>
+          <h1>Support the community by posting any opportunity here!!</h1>
+          <form action="">
+          <h3>Company Name</h3>
+          <input type="text" name="" id="" />
+          <h3>Company Image URL</h3>
+          <input type="text" name="" id="" />
+          <h3>Company's Website</h3>
+          <input type="text" name="" id="" />
+          <h3>Role</h3>
+          <input type="text" name="" id="" />
+          <h3>Work</h3>
+          <h3>Location</h3>
+          <input type="text" name="" id="" />
+          <h3>Role Description</h3>
+          <textarea name="" id="" />
+          <h3>Skills Required</h3>
+          <input type="text" name="" id="" />
+          <h3>Tell us more about your organization</h3>
+        </form>
+        </Box>
+      </Modal>
+      <Heading>
+        <h1>Looking to start a new career? Get started here!!</h1>
+      </Heading>
     <Opportunity>
     <Oppo>
-    <div onClick={careerClick} >Lorem ipsum dolor sit amet.</div>
-    <div onClick={careerClick} >Lorem ipsum dolor sit amet.</div>
-    <div onClick={careerClick} >Lorem ipsum dolor sit amet.</div>
-    <div onClick={careerClick} >Lorem ipsum dolor sit amet.</div>
-    <div onClick={careerClick} >Lorem ipsum dolor sit amet.</div>
-    <div onClick={careerClick} >Lorem ipsum dolor sit amet.</div>
+      {
+        Carrers.map((opportunity,index) => {
+          return (
+            <Career key={index}
+            companyName={opportunity.companyName}
+            companyImageLink={opportunity.companyImageLink}
+            companyWebsite={opportunity.companyWebsite}
+            companyVision={opportunity.companyVision}
+            role={opportunity.role}
+            roleDescription={opportunity.roleDescription}
+            skills={opportunity.skills}
+            jobType={opportunity.jobType}
+            jobLocation={opportunity.jobLocation}
+            userId={opportunity.userId}
+            />
+            )
+          })
+      }
     </Oppo>
     </Opportunity>
     </Section>
