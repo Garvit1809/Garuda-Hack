@@ -10,7 +10,7 @@ MauKerja is a web application for students to level up their skills. We provide 
 
 # ✊ About
 
-> Stresser stresses on reducing people's stress and anxiety by providing featues like therapy, diet, diary and chat sections.
+> Mau Kerja, a place where anyone can have their dream job and upgrade their skills
 
 You can checkout the demo video on youtube by clicking on the thumbnail below.
 <a href="/">
