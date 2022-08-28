@@ -21,6 +21,9 @@ import GoogleHackImg from "../Assets/google-hack.jpg"
 import ProjectManagementImg from "../Assets/project-management.jpg"
 import LatteArtImg from "../Assets/latte-art.jpg"
 import Button from "../Components/GeneralComponents/Button";
+import Hack1 from '../Assets/Hack1.png'
+import Hack2 from '../Assets/Hack2.png'
+import Hack3 from '../Assets/Hack3.png'
 
 
 const Section = styled.div`
@@ -420,9 +423,9 @@ const Events = () => {
         <EventPlan>
           <Header>
             <ImgContainer>
-            <img src={eventImg1} alt="" />
+            <img src={Hack3} alt="" />
             </ImgContainer>
-            <h2 className='name'>Hack n Jill I</h2>
+            <h2 className='name'>Hack and Fitness</h2>
           </Header>
           <div></div>
           <h3 className='JobDesc'>Google</h3>
@@ -444,9 +447,9 @@ const Events = () => {
         <EventPlan>
           <Header>
             <ImgContainer>
-            <img src={eventImg1} alt="" />
+            <img src={Hack1} alt="" />
             </ImgContainer>
-            <h2 className='name'>Hack n Jill II</h2>
+            <h2 className='name'>MedHacks</h2>
           </Header>
           <div></div>
           <h3 className='JobDesc'>Google</h3>
@@ -468,9 +471,9 @@ const Events = () => {
         <EventPlan>
           <Header>
             <ImgContainer>
-            <img src={eventImg1} alt="" />
+            <img src={Hack2} alt="" />
             </ImgContainer>
-            <h2 className='name'>Hack n Jill III</h2>
+            <h2 className='name'>MLH Hack Week September</h2>
           </Header>
           <div></div>
           <h3 className='JobDesc'>Google</h3>

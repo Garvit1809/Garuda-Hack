@@ -173,7 +173,7 @@ const Resrc = () => {
           </header>
         </Heading>
         <Courses>
-          <Course onClick={handleCVClick} >
+          <Course onClick={handleEmptyClick} >
             <img src={img1} alt="" />
             <h2>Ultimate guide to build a CV</h2>
           </Course>
@@ -181,11 +181,11 @@ const Resrc = () => {
             <img src={img2} alt="" />
             <h2>Web Development RoadMap</h2>
           </Course>
-          <Course onClick={handleInterviewClick} >
+          <Course onClick={handleEmptyClick} >
             <img src={img4} alt="" />
             <h2>Important Interview Skills</h2>
           </Course>
-          <Course onClick={handleUIClick} >
+          <Course onClick={handleEmptyClick} >
             <img src={img12} alt="" />
             <h2>UI Vs UX</h2>
           </Course>

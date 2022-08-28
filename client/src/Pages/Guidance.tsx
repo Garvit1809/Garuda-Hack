@@ -11,7 +11,9 @@ import { getData } from '../lib'
 import Box from '@mui/material/Box';
 import Modal from '@mui/material/Modal';
 import useStyles from '../Components/CareerComponents/CareersStyles'
-
+import MentorImg3 from '../Assets/MentorImg3.jpg'
+import MentorImg4 from '../Assets/MentorImg4.jpg'
+import MentorImg5 from '../Assets/MentorImg5.jpg'
 
 const Section = styled.div`
 width: 100%;
@@ -303,21 +305,21 @@ const Guidance = () => {
         <Guide>
           <Header>
             <ImgContainer>
-            <img src={MentorImg1} alt="" />
+            <img src={MentorImg3} alt="" />
             </ImgContainer>
             <div>
-            <h2>GuideName</h2>
-            <h3><MdPeopleAlt/> <span>12</span></h3>
+            <h2>Jonas Schmedtmann</h2>
+            <h3><MdPeopleAlt/> <span>128</span></h3>
             </div>
           </Header>
           <h3 className='JobDesc' >Web Developer</h3>
-          <h3 className='experience' >Experience:- <span>10 Years</span> </h3>
-          <h3 className='company' >Working at <span>Org Name</span></h3>
+          <h3 className='experience' >Experience:- <span>14 Years</span> </h3>
+          <h3 className='company' >Working at <span>Udemy</span></h3>
           <Education>
           <h3 className='education' >Education</h3>
-          <p>Zakir Hussain College of Engineering and Texhnology, AMU</p> 
+          <p>McGill University</p> 
           </Education>
-          <h3 className='fees' >Fees:- <span>$10/lesson</span></h3>
+          <h3 className='fees' >Fees:- <span>$25/lesson</span></h3>
           <Socials>
           <h3>Socials</h3>
           <div>
@@ -335,13 +337,13 @@ const Guidance = () => {
             <img src={MentorImg1} alt="" />
             </ImgContainer>
             <div>
-            <h2>GuideName</h2>
-            <h3><MdPeopleAlt/> <span>12</span></h3>
+            <h2>Garvit Varshney</h2>
+            <h3><MdPeopleAlt/> <span>08</span></h3>
             </div>
           </Header>
-          <h3 className='JobDesc' >Web Developer</h3>
-          <h3 className='experience' >Experience:- <span>10 Years</span> </h3>
-          <h3 className='company' >Working at <span>Org Name</span></h3>
+          <h3 className='JobDesc' >Frontend Developer</h3>
+          <h3 className='experience' >Experience:- <span>1 Years</span> </h3>
+          <h3 className='company' >Working at <span>SuperReach</span></h3>
           <Education>
           <h3 className='education' >Education</h3>
           <p>Zakir Hussain College of Engineering and Texhnology, AMU</p> 
@@ -364,16 +366,47 @@ const Guidance = () => {
             <img src={MentorImg2} alt="" />
             </ImgContainer>
             <div>
-            <h2>GuideName</h2>
-            <h3><MdPeopleAlt/> <span>12</span></h3>
+            <h2>Md. Yusuf Khan</h2>
+            <h3><MdPeopleAlt/> <span>37</span></h3>
             </div>
           </Header>
-          <h3 className='JobDesc' >Web Developer</h3>
-          <h3 className='experience' >Experience:- <span>10 Years</span> </h3>
-          <h3 className='company' >Working at <span>Org Name</span></h3>
+          <h3 className='JobDesc' >BlockChain Developer</h3>
+          <h3 className='experience' >Experience:- <span>6 Years</span> </h3>
+          <h3 className='company' >Working at <span>Polygon</span></h3>
           <Education>
           <h3 className='education' >Education</h3>
-          <p>Zakir Hussain College of Engineering and Texhnology, AMU</p> 
+          <p>University of Toronto</p> 
+          </Education>
+          <h3 className='fees' >Fees:- <span>$20/lesson</span></h3>
+          <Socials>
+          <h3>Socials</h3>
+          <div>
+            <BsLinkedin/>
+            <BsGithub/>
+          </div>
+          </Socials>
+          <BecomeMentee>
+            <Button text="Become a Mentee" link="#" clr="#fff" backgroundColor="#202020" />
+          </BecomeMentee>
+        </Guide>
+        <Guide>
+          <Header>
+            <ImgContainer>
+            <div>
+            <img src={MentorImg4} alt="" />
+            </div>
+            </ImgContainer>
+            <div>
+            <h2>Jose Portilla</h2>
+            <h3><MdPeopleAlt/> <span>292</span></h3>
+            </div>
+          </Header>
+          <h3 className='JobDesc' >Senior SDE || Teacher</h3>
+          <h3 className='experience' >Experience:- <span>11 Years</span> </h3>
+          <h3 className='company' >Working as <span>Instructor</span></h3>
+          <Education>
+          <h3 className='education' >Education</h3>
+          <p>MIT - Massachusetts Institute of Technology</p> 
           </Education>
           <h3 className='fees' >Fees:- <span>$10/lesson</span></h3>
           <Socials>
@@ -390,52 +423,21 @@ const Guidance = () => {
         <Guide>
           <Header>
             <ImgContainer>
-            <div>
-            <img src={MentorImg2} alt="" />
-            </div>
+            <img src={MentorImg5} alt="" />
             </ImgContainer>
             <div>
-            <h2>GuideName</h2>
+            <h2>Ashutosh Rana</h2>
             <h3><MdPeopleAlt/> <span>12</span></h3>
             </div>
           </Header>
-          <h3 className='JobDesc' >Web Developer</h3>
-          <h3 className='experience' >Experience:- <span>10 Years</span> </h3>
-          <h3 className='company' >Working at <span>Org Name</span></h3>
+          <h3 className='JobDesc' >ML Engineer</h3>
+          <h3 className='experience' >Experience:- <span>4 Years</span> </h3>
+          <h3 className='company' >Working at <span>Google</span></h3>
           <Education>
           <h3 className='education' >Education</h3>
-          <p>Zakir Hussain College of Engineering and Texhnology, AMU</p> 
+          <p>Indian Institute of Technology Bombay</p> 
           </Education>
-          <h3 className='fees' >Fees:- <span>$10/lesson</span></h3>
-          <Socials>
-          <h3>Socials</h3>
-          <div>
-            <BsLinkedin/>
-            <BsGithub/>
-          </div>
-          </Socials>
-          <BecomeMentee>
-            <Button text="Become a Mentee" link="#" clr="#fff" backgroundColor="#202020" />
-          </BecomeMentee>
-        </Guide>
-        <Guide>
-          <Header>
-            <ImgContainer>
-            <img src={MentorImg1} alt="" />
-            </ImgContainer>
-            <div>
-            <h2>GuideName</h2>
-            <h3><MdPeopleAlt/> <span>12</span></h3>
-            </div>
-          </Header>
-          <h3 className='JobDesc' >Web Developer</h3>
-          <h3 className='experience' >Experience:- <span>10 Years</span> </h3>
-          <h3 className='company' >Working at <span>Org Name</span></h3>
-          <Education>
-          <h3 className='education' >Education</h3>
-          <p>Zakir Hussain College of Engineering and Texhnology, AMU</p> 
-          </Education>
-          <h3 className='fees' >Fees:- <span>$10/lesson</span></h3>
+          <h3 className='fees' >Fees:- <span>$15/lesson</span></h3>
           <Socials>
           <h3>Socials</h3>
           <div>
