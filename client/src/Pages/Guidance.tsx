@@ -334,35 +334,6 @@ const Guidance = () => {
         <Guide>
           <Header>
             <ImgContainer>
-            <img src={MentorImg1} alt="" />
-            </ImgContainer>
-            <div>
-            <h2>Garvit Varshney</h2>
-            <h3><MdPeopleAlt/> <span>08</span></h3>
-            </div>
-          </Header>
-          <h3 className='JobDesc' >Frontend Developer</h3>
-          <h3 className='experience' >Experience:- <span>1 Years</span> </h3>
-          <h3 className='company' >Working at <span>SuperReach</span></h3>
-          <Education>
-          <h3 className='education' >Education</h3>
-          <p>Zakir Hussain College of Engineering and Texhnology, AMU</p> 
-          </Education>
-          <h3 className='fees' >Fees:- <span>$10/lesson</span></h3>
-          <Socials>
-          <h3>Socials</h3>
-          <div>
-            <BsLinkedin/>
-            <BsGithub/>
-          </div>
-          </Socials>
-          <BecomeMentee>
-            <Button text="Become a Mentee" link="#" clr="#fff" backgroundColor="#202020" />
-          </BecomeMentee>
-        </Guide>
-        <Guide>
-          <Header>
-            <ImgContainer>
             <img src={MentorImg2} alt="" />
             </ImgContainer>
             <div>
@@ -407,6 +378,35 @@ const Guidance = () => {
           <Education>
           <h3 className='education' >Education</h3>
           <p>MIT - Massachusetts Institute of Technology</p> 
+          </Education>
+          <h3 className='fees' >Fees:- <span>$10/lesson</span></h3>
+          <Socials>
+          <h3>Socials</h3>
+          <div>
+            <BsLinkedin/>
+            <BsGithub/>
+          </div>
+          </Socials>
+          <BecomeMentee>
+            <Button text="Become a Mentee" link="#" clr="#fff" backgroundColor="#202020" />
+          </BecomeMentee>
+        </Guide>
+        <Guide>
+          <Header>
+            <ImgContainer>
+            <img src={MentorImg1} alt="" />
+            </ImgContainer>
+            <div>
+            <h2>Garvit Varshney</h2>
+            <h3><MdPeopleAlt/> <span>08</span></h3>
+            </div>
+          </Header>
+          <h3 className='JobDesc' >Frontend Developer</h3>
+          <h3 className='experience' >Experience:- <span>1 Years</span> </h3>
+          <h3 className='company' >Working at <span>SuperReach</span></h3>
+          <Education>
+          <h3 className='education' >Education</h3>
+          <p>Zakir Hussain College of Engineering and Texhnology, AMU</p> 
           </Education>
           <h3 className='fees' >Fees:- <span>$10/lesson</span></h3>
           <Socials>

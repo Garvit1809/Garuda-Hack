@@ -17,6 +17,21 @@ const Section = styled.div`
   h6 {
     margin: 0;
   }
+
+  p{
+    width: 70%;
+  }
+  
+  h3{
+    width: 70%;
+    font-weight: 500;
+    /* border: 1px solid red; */
+  }
+
+  ul,ol{
+    /* border: 1px solid red; */
+    width: 70%;
+  }
 `;
 
 const Heading = styled.div`
@@ -31,7 +46,11 @@ const Heading = styled.div`
   margin-bottom: 2rem;
 `;
 
-const Start = styled.div``;
+const Start = styled.div`
+width: 70%;
+margin: 0 auto;
+margin-bottom: 1rem;
+`;
 
 const WebDevResource = () => {
   return (
@@ -108,7 +127,7 @@ const WebDevResource = () => {
           in JavaScript) works on React whereas MEAN deals with Angular (a
           framework written in TypeScript).{" "}
         </p>
-        <h2>Frontend Development</h2>
+        <h2>2. Frontend Development</h2>
         <p>
           Front-End is the UI (User Interface), it deals with the website’s
           overall appearance, on how interactive and dynamic it is. For
@@ -200,7 +219,7 @@ const WebDevResource = () => {
           explained in the next step, that stores the information needed to be
           retrieved.
         </p>
-        <h2>$. DataBase</h2>
+        <h2>4. DataBase</h2>
         <p>
           The database is a collection of data from which we can manage data
           (store and retrieve). There are two types of databases: relational

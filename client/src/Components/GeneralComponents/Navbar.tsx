@@ -70,7 +70,9 @@ const Navbar = () => {
           <Link to="/mentors">Guidance</Link>
         </MeuItem>
       </Menu>
-      <Button text="Connect to Discord" link="//discord.gg/zjzwnAq9" backgroundColor="#202020" clr="#fff"  />
+      <Link to="//discord.gg/zjzwnAq9" target="_blank" >
+      <Button text="Connect to Discord" link="https://discord.gg/zjzwnAq9" backgroundColor="#202020" clr="#fff"  />
+      </Link>
     </Section>
   );
 };
