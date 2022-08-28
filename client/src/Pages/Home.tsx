@@ -393,7 +393,7 @@ const Home = () => {
             <h2 className='name'>Latte Art Masterclass</h2>
           </Header>
           <div></div>
-          <h3 className='JobDesc'>Google</h3>
+          <h3 className='JobDesc'>Barista Union</h3>
           <IconContainer>
           <StarContainer>
           <img className='star' src={CalendarImg} alt="" /><h3 className='starnum'>10 December 2022</h3>

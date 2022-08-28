@@ -18,7 +18,11 @@ const Section = styled.div`
   h4,
   h5,
   h {
+    text-align: left;
+    padding-left: 1rem;
+    width: 100%;
     margin: 0;
+    font-size: 1rem;
   }
 
   img {
@@ -69,7 +73,7 @@ const BriefEvent = (props: eventProps) => {
         <h5>125</h5>
       </div>
       <h4>Hosted By</h4>
-      <h4>{props.dateStart}-{props.dateEnd}</h4>
+      <div>{props.dateStart} - {props.dateEnd}</div>
       <h4>{props.eventMode}</h4>
       {
         props.eventMode === "Digital" ? null : <h4>{props.location}</h4> 
