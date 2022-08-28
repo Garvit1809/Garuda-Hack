@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 import styled from 'styled-components'
 
 const Section = styled.div`
@@ -16,6 +17,11 @@ box-shadow: 1px 1px 5px 1px rgba(0,0,0,0.75);
 
 h1,h2,h3,h4,h5,h6{
   margin: 0;
+}
+
+a{
+  color: inherit;
+  text-decoration: none;
 }
 
   &:hover{
@@ -100,6 +106,7 @@ interface opportunity {
 const Career = (props: opportunity) => {
   return (
     <Section>
+      <Link to="//optiver.com/working-at-optiver/career-opportunities/6326967002/" target="_blank" >
       <ImgContainer>
       <img src={props.companyImageLink} alt="" />
       </ImgContainer>
@@ -119,6 +126,7 @@ const Career = (props: opportunity) => {
         : <h3>{props.jobLocation}</h3>
       }
       </Location>
+      </Link>
       <Links>
       
       </Links>
