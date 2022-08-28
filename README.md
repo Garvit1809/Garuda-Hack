@@ -3,7 +3,7 @@
 <h3 align="center"> Short Brief </h3>
 
 <p align="center">
-MauKerja is a web application for students to level up their skills. We provide Job/Internship opportunities, learning resources and courses, one can organize and join events and you can get personal guidance from experienced Mentors.
+MauKerja is a web application for students/folks to find their dream job. We provide Job/Internship opportunities from StratUps to Big-Tech giants, provide free and high-quality learning resources and courses, one can also organize and join events and can can get personal guidance from experienced Mentors.
  </p>
 
 ---
@@ -13,7 +13,7 @@ MauKerja is a web application for students to level up their skills. We provide 
 > Mau Kerja, a place where anyone can have their dream job and upgrade their skills
 
 You can checkout the demo video on youtube by clicking on the thumbnail below.
-<a href="/">
+<a href="https://youtu.be/PUGBi2gFvBY">
 <img src="https://user-images.githubusercontent.com/89806031/187057843-e67a1898-aabb-444d-8ade-bc9b7759cee1.png" >  
 </a>
 
