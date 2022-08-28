@@ -13,11 +13,9 @@ MauKerja is a web application for students to level up their skills. We provide 
 > Stresser stresses on reducing people's stress and anxiety by providing featues like therapy, diet, diary and chat sections.
 
 You can checkout the demo video on youtube by clicking on the thumbnail below.
-<a href="https://www.youtube.com/watch?v=kYiz4qzpaZw">
-<img src="https://user-images.githubusercontent.com/89806031/178891853-da0d4d10-f454-42f8-bae5-7028d52f15a4.png" >  
+<a href="/">
+<img src="https://user-images.githubusercontent.com/89806031/187057843-e67a1898-aabb-444d-8ade-bc9b7759cee1.png" >  
 </a>
-
-The site is deployed through heroku, which you can view from [here](https://stresser-on.herokuapp.com/)
 
 ---
 
@@ -61,51 +59,55 @@ We are planning to add a lot of features to the application to make it useful fo
 
 ### 1. 🏡Home Page
 
-![homeImg](https://user-images.githubusercontent.com/89806031/178814155-9a31f975-aee1-4630-9d05-29b30b14b46b.png)
-![homeImg2](https://user-images.githubusercontent.com/89806031/179440842-f424fc5d-8f25-4a0e-9b7a-6fdd8f92c091.png)
+Here are some glimpse of our Home Page 👇👇
+
+![HomePage1](https://user-images.githubusercontent.com/89806031/187057890-949c28ed-44a0-47b1-92e5-db3d2733c648.png)
+![HomePage2](https://user-images.githubusercontent.com/89806031/187057920-bfc2aa56-43b2-4c64-be36-6263c41cf2eb.png)
+![HomePage3](https://user-images.githubusercontent.com/89806031/187057951-f964a56b-b037-47c5-be2a-97b53b20f6c0.png)
+![HomePage4](https://user-images.githubusercontent.com/89806031/187057963-e4663871-01df-4fed-9e1f-628ec39a6b33.png)
+
 
 ### 2. 👨‍🎓Careers Page
 
-You can listen to some stress-relieving music 😇, can do yoga and meditation by watching tutorials, watch some funny videos to get some laugh and much more on the therapy section. You can filter the videos acccordingly 👇👇
+ We have **Careers Page** where students/folks can find Job/Internship Opportunities from Startup and Big-Tech Companires as well.👇👇
 
-![therapyImg2](https://user-images.githubusercontent.com/89806031/178817207-9b3f5ef3-449d-4121-8d96-37637f829983.png)
+![CareersPage1](https://user-images.githubusercontent.com/89806031/187058036-ad4257de-ff92-493c-9ebd-47a7f676df99.png)
 
-Filtered Method Videos 👇👇
-![therapyImg1](https://user-images.githubusercontent.com/89806031/178816259-f7a1c48d-0b26-48e4-8660-86d88828291d.png)
+You can also post any Job/Internship opportunity 👇👇
+![CareersPage2](https://user-images.githubusercontent.com/89806031/187058070-5f7c0794-a79c-4e92-b177-1e9d7849a2c9.png)
+
 
 ### 3. 📖Resources Page
 
-A healthy diet plays an important role in reducing stress and anxiety. We have a diet section where you can search for recipes of any ingredient.
-![DietImg1](https://user-images.githubusercontent.com/89806031/178817824-5cf15ef6-3720-4d51-b45c-9287eb31cb1b.png)
+We have to pay a lot now-a-days for those Online Courses 🥴. But Don't worry, We have a **Resources Page** where you can find useful resourses/courses to prepare for your dream Job 👇👇
+![ResourcesPage](https://user-images.githubusercontent.com/89806031/187058142-66478031-0809-4065-82a5-d8b60825d46e.png)
+![ResourcesPage2](https://user-images.githubusercontent.com/89806031/187058153-5a12678c-838f-4a08-976c-9fe1f4c32d10.png)
 
-There is a small box having a list of ingredients 🍈🥑 which help in reducing stress as well as anxiety.
-![dietImg2](https://user-images.githubusercontent.com/89806031/178822090-fd452a8c-276e-4590-b3a2-562141824683.png)
 
-You can look recipes for any ingredient from the Ingredient-Box. By <b><i>Clicking</i></b> on the recipe image you can get more information about that recipe 😋
-![dietImg3](https://user-images.githubusercontent.com/89806031/178822706-714f2fc4-e592-4fa1-a57c-ac41494c0784.png)
+On Clicking any of these Resources, you will get all the sufficient information about that topic.
+![ResourcesPage3](https://user-images.githubusercontent.com/89806031/187058161-2896ad2a-231f-48f6-bdfe-58ccaca78ef4.png)
+
 
 ### 4. 👩‍💻Events Page
 
-If you struggle with stress, depression, or anxiety, keeping a journal can be a great Idea. Keep a track of your daily mood with our diary section.
-![diaryImg1](https://user-images.githubusercontent.com/89806031/183259613-e0f0840f-7028-448a-8037-d1b573bc4cbf.png)
+Events are a important for improvement in one's Texhnical, Behavioural and Communication Skills. We have an **Event Page** where one can hosty and attend any number of Events, it may be a hackathon, a workshop or a seminar/talkShow Event. Here are some of the ongoing Events 👇👇
+![EventsPage1](https://user-images.githubusercontent.com/89806031/187058262-f0d711f6-0178-483f-8556-1977979f85d5.png)
 
-You can also view your diary entries 📖
-![diaryImg2](https://user-images.githubusercontent.com/89806031/183259724-351be00c-0555-4406-9bf5-639f0ff49a59.png)
+You can also Host an Event by clicking on the Host an Event Button 
+![EventsPage2](https://user-images.githubusercontent.com/89806031/187058283-ec68b91f-9a9f-4fb1-b707-c49a1ad981a0.png)
+
 
 ### 5. 👨‍🏫Mentors Page
 
-Lack of social interactions also damages mental health. But don't worry, we have a chat section where you can interact with other people facing same issues.
-![chatImg1](https://user-images.githubusercontent.com/89806031/178890614-93a7cbaf-0929-4ef8-ae64-3a95d9cb52fa.png)
+Cherry on the Pie, We have a **Guidance Page** where you can take personal/group lessons from experienced Mentors
+![MentorsPage1](https://user-images.githubusercontent.com/89806031/187058350-7051696e-852e-47f6-aeb1-d06bffee8a1c.png)
+![MentorPage3](https://user-images.githubusercontent.com/89806031/187058365-cf057366-26ac-473c-abd6-b94458391c8b.png)
 
-![chatImg2](https://user-images.githubusercontent.com/89806031/178890696-97bdbca8-1266-4837-a588-f9c003098139.png)
+You can also become a Mentor yourself if you are experienced enough to teach the young buds🌼
+![MentorsPage2](https://user-images.githubusercontent.com/89806031/187058406-0bc1a2b5-1950-4c42-954d-4ac5e9a20156.png)
 
-### 6. Authentication Pages
-
-SignUp Page
-![authImg1](https://user-images.githubusercontent.com/89806031/178909035-3f754068-8da8-45c9-b57d-3a5e814010f7.png)
-
-Login Page
-![autImg2](https://user-images.githubusercontent.com/89806031/178909075-7a5029d8-4907-440e-91a9-61f8c78ffad9.png)
+Here are our top Mentors this week
+![TopMentors](https://user-images.githubusercontent.com/89806031/187058456-ea90a2cf-a5f4-4305-878e-0649bf5ae504.png)
 
 ---
 
@@ -114,7 +116,6 @@ Login Page
 - Garvit Varshney
   [![portfolio](https://img.shields.io/badge/my_portfolio-000?style=for-the-badge&logo=ko-fi&logoColor=white)](https://garvits-portfolio-on.netlify.app/)
   [![linkedin](https://img.shields.io/badge/linkedin-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/garvit-varshney-a35055220/)
-  [![twitter](https://img.shields.io/badge/twitter-1DA1F2?style=for-the-badge&logo=twitter&logoColor=white)](https://twitter.com/20elb179)
 - Desmond
 [![portfolio](https://img.shields.io/badge/my_portfolio-000?style=for-the-badge&logo=ko-fi&logoColor=white)](https://desmond-kristian.my.id/)
   [![linkedin](https://img.shields.io/badge/linkedin-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/desmond-kristian-84aa92129/)
